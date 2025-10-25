@@ -8,7 +8,7 @@ export default function HeroSection() {
   const heroImage = PlaceHolderImages.find(img => img.id === "hero-family-coloring");
 
   return (
-    <section className="py-16 sm:py-24 bg-primary/20">
+    <section className="pt-8 sm:pt-16 bg-primary/20">
       <div className="container mx-auto px-4 md:px-6 grid md:grid-cols-2 gap-12 items-center">
         
         {/* Text content for larger screens */}
@@ -26,7 +26,7 @@ export default function HeroSection() {
 
         {/* Image for larger screens */}
         <div className="hidden md:flex justify-center">
-          <Card className="overflow-hidden shadow-2xl rounded-2xl w-full max-w-lg">
+          <Card className="overflow-hidden shadow-2xl rounded-2xl w-full max-w-lg bg-transparent border-none">
             <CardContent className="p-0">
               {heroImage && (
                 <Image
@@ -35,7 +35,7 @@ export default function HeroSection() {
                   width={1200}
                   height={800}
                   data-ai-hint={heroImage.imageHint}
-                  className="w-full h-auto object-cover"
+                  className="w-full h-auto object-contain"
                   priority
                 />
               )}
@@ -44,7 +44,7 @@ export default function HeroSection() {
         </div>
 
         {/* Mobile layout: Headline, Subheadline, Image, Button */}
-        <div className="md:hidden flex flex-col items-center text-center space-y-8">
+        <div className="md:hidden flex flex-col items-center text-center space-y-6">
           <h1 className="text-4xl font-headline font-bold tracking-tighter">
             Transforme o tempo de tela em momentos de fé, alegria e aprendizado com Jesus!
           </h1>
@@ -52,7 +52,7 @@ export default function HeroSection() {
             Mais de 100 atividades prontas para imprimir e viver momentos de fé, aprendizado e conexão em família.
           </p>
           <div className="w-full max-w-lg">
-            <Card className="overflow-hidden shadow-2xl rounded-2xl">
+            <Card className="overflow-hidden shadow-none rounded-2xl bg-transparent border-none">
               <CardContent className="p-0">
                 {heroImage && (
                   <Image
@@ -61,7 +61,7 @@ export default function HeroSection() {
                     width={1200}
                     height={800}
                     data-ai-hint={heroImage.imageHint}
-                    className="w-full h-auto object-cover"
+                    className="w-full h-auto object-contain"
                     priority
                   />
                 )}
