@@ -1,3 +1,46 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-family-coloring",
+      "description": "A smiling mother and her children coloring biblical drawings in a bright, welcoming room.",
+      "imageUrl": "https://images.unsplash.com/photo-1758598737505-90a3084105ac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb3RoZXIlMjBjaGlsZHJlbiUyMGNvbG9yaW5nfGVufDB8fHx8MTc2MTQzMzk1OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mother children coloring"
+    },
+    {
+      "id": "flatlay-drawings",
+      "description": "A clean, bright flat-lay of printed coloring pages, Bible stories, and colored pencils.",
+      "imageUrl": "https://images.unsplash.com/photo-1727044113262-b96af5546da2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb2xvcmluZyUyMHBhZ2VzJTIwZmxhdGxheXxlbnwwfHx8fDE3NjE0MzM5NjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "coloring pages flatlay"
+    },
+    {
+      "id": "creator-monica",
+      "description": "A circular portrait of Mônica Alencar, the creator of the product.",
+      "imageUrl": "https://images.unsplash.com/photo-1557053910-d9eadeed1c58?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2MTM4NTI1OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman portrait"
+    },
+    {
+      "id": "testimonial-1",
+      "description": "Profile picture for the first testimonial.",
+      "imageUrl": "https://images.unsplash.com/photo-1598625873873-52f9aefd7d9d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx3b21hbiUyMHNtaWxpbmd8ZW58MHx8fHwxNzYxMzQ1MjEwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman smiling"
+    },
+    {
+      "id": "testimonial-2",
+      "description": "Profile picture for the second testimonial.",
+      "imageUrl": "https://images.unsplash.com/photo-1633367583895-08545d733dfe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtYW4lMjBzbWlsaW5nfGVufDB8fHx8MTc2MTM0ODcxMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man smiling"
+    },
+    {
+      "id": "testimonial-3",
+      "description": "Profile picture for the third testimonial.",
+      "imageUrl": "https://images.unsplash.com/photo-1685873875056-bb96de15555c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxmYW1pbHklMjBwaG90b3xlbnwwfHx8fDE3NjEzMzEyMDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "family photo"
+    },
+    {
+      "id": "final-cta-background",
+      "description": "A light illustration of a sky with light and soft floral elements.",
+      "imageUrl": "https://images.unsplash.com/photo-1688131652822-69922370e98a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxza3klMjBmbG9yYWwlMjBpbGx1c3RyYXRpb258ZW58MHx8fHwxNzYxNDMzOTYwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sky floral illustration"
+    }
+  ]
 }
