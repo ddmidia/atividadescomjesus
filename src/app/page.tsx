@@ -9,7 +9,6 @@ import PricingSection from '@/components/landing/pricing-section';
 import GuaranteeSection from '@/components/landing/guarantee-section';
 import FinalCtaSection from '@/components/landing/final-cta-section';
 import FloatingCta from '@/components/landing/floating-cta';
-import StoryGeneratorSection from '@/components/landing/story-generator-section';
 
 export default function Home() {
   return (
@@ -19,7 +18,6 @@ export default function Home() {
         <HeroSection />
         <BenefitsSection />
         <WhatYouGetSection />
-        <StoryGeneratorSection />
         <CreatorSection />
         <TestimonialsSection />
         <PricingSection />
