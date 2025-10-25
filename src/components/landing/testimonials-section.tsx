@@ -1,7 +1,11 @@
+
+"use client";
+
 import { SectionWrapper } from "./section-wrapper";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
+  CarouselApi,
   CarouselContent,
   CarouselItem,
   CarouselNext,
@@ -9,6 +13,8 @@ import {
 } from "@/components/ui/carousel";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
+import React from "react";
+import { cn } from "@/lib/utils";
 
 const testimonials = [
   {
@@ -41,6 +47,27 @@ const StarIcon = (props: React.SVGProps<SVGSVGElement>) => (
 
 
 export default function TestimonialsSection() {
+  const [api, setApi] = React.useState<CarouselApi>();
+  const [current, setCurrent] = React.useState(0);
+  const [count, setCount] = React.useState(0);
+
+  React.useEffect(() => {
+    if (!api) {
+      return;
+    }
+
+    setCount(api.scrollSnapList().length);
+    setCurrent(api.selectedScrollSnap() + 1);
+
+    api.on("select", () => {
+      setCurrent(api.selectedScrollSnap() + 1);
+    });
+  }, [api]);
+
+  const scrollTo = (index: number) => {
+    api?.scrollTo(index);
+  };
+
   return (
     <SectionWrapper>
       <div className="text-center space-y-4 mb-12">
@@ -49,6 +76,7 @@ export default function TestimonialsSection() {
         </h2>
       </div>
       <Carousel
+        setApi={setApi}
         opts={{
           align: "start",
           loop: true,
@@ -87,6 +115,19 @@ export default function TestimonialsSection() {
         <CarouselPrevious className="hidden sm:flex" />
         <CarouselNext className="hidden sm:flex" />
       </Carousel>
+      <div className="flex justify-center gap-2 mt-6">
+        {Array.from({ length: count }).map((_, index) => (
+          <button
+            key={index}
+            onClick={() => scrollTo(index)}
+            className={cn(
+              "h-2 w-2 rounded-full transition-colors",
+              current === index + 1 ? "bg-primary" : "bg-primary/30"
+            )}
+            aria-label={`Ir para o depoimento ${index + 1}`}
+          />
+        ))}
+      </div>
     </SectionWrapper>
   );
 }
