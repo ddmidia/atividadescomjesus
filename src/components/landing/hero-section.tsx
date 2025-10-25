@@ -8,7 +8,7 @@ export default function HeroSection() {
   const heroImage = PlaceHolderImages.find(img => img.id === "hero-family-coloring");
 
   return (
-    <section className="pt-8 md:pt-12 bg-primary/20">
+    <section className="pt-8 sm:pt-16 bg-primary/20">
       <div className="container mx-auto px-4 md:px-6 grid md:grid-cols-2 gap-12 items-center">
         
         {/* Text content for larger screens */}
@@ -19,9 +19,11 @@ export default function HeroSection() {
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto md:mx-0">
             Mais de 100 atividades prontas para imprimir e viver momentos de fé, aprendizado e conexão em família.
           </p>
-          <Button size="lg" className="animate-pulse-subtle cta-glow text-lg font-bold h-14 px-10 self-start">
-            Quero o Kit Agora <Sparkles className="ml-2 h-5 w-5" />
-          </Button>
+          <a href="#pricing">
+            <Button size="lg" className="animate-pulse-subtle cta-glow text-lg font-bold h-14 px-10 self-start">
+              Quero o Kit Agora <Sparkles className="ml-2 h-5 w-5" />
+            </Button>
+          </a>
         </div>
 
         {/* Image for larger screens */}
@@ -68,9 +70,11 @@ export default function HeroSection() {
               </CardContent>
             </Card>
           </div>
-          <Button size="lg" className="animate-pulse-subtle cta-glow text-lg font-bold h-14 px-10 w-full">
-            Quero o Kit Agora <Sparkles className="ml-2 h-5 w-5" />
-          </Button>
+          <a href="#pricing" className="w-full">
+            <Button size="lg" className="animate-pulse-subtle cta-glow text-lg font-bold h-14 px-10 w-full">
+              Quero o Kit Agora <Sparkles className="ml-2 h-5 w-5" />
+            </Button>
+          </a>
         </div>
 
       </div>

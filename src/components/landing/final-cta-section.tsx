@@ -13,9 +13,11 @@ export default function FinalCtaSection() {
         <p className="text-lg md:text-xl max-w-3xl text-gray-300">
           Em poucos minutos, você já pode imprimir e viver momentos de amor e aprendizado em família — do jeitinho que Deus sonhou.
         </p>
-        <Button size="lg" className={cn("animate-pulse-subtle cta-glow text-lg font-bold h-16 px-12 mt-4")}>
-          Acessar o Material Agora <Sparkles className="ml-2 h-5 w-5" />
-        </Button>
+        <a href="#pricing">
+          <Button size="lg" className={cn("animate-pulse-subtle cta-glow text-lg font-bold h-16 px-12 mt-4")}>
+            Acessar o Material Agora <Sparkles className="ml-2 h-5 w-5" />
+          </Button>
+        </a>
       </div>
     </SectionWrapper>
   );
