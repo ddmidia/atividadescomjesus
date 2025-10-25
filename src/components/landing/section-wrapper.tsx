@@ -13,7 +13,7 @@ export function SectionWrapper({
   return (
     <section
       className={cn(
-        "py-16 sm:py-20 animate-in fade-in-up duration-700",
+        "py-12 sm:py-16 animate-in fade-in-up duration-700",
         className
       )}
       {...props}
