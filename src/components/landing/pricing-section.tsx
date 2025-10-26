@@ -53,11 +53,6 @@ export default function PricingSection() {
             "shadow-lg relative flex flex-col h-full bg-card overflow-hidden",
             plan.isRecommended ? 'border-accent border-2' : ''
           )}>
-             {plan.isRecommended && (
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2">
-               
-              </div>
-            )}
             <CardHeader className="items-center text-center pt-10">
               <CardTitle className="text-2xl font-headline">{plan.name}</CardTitle>
               <div className="text-5xl font-bold font-headline py-4">
@@ -94,7 +89,7 @@ export default function PricingSection() {
               <a href="#" className="w-full">
                 <Button size="lg" className={cn(
                   "w-full font-bold text-lg h-14 rounded-full",
-                  plan.isRecommended ? 'btn-glow' : 'bg-primary/80 hover:bg-primary'
+                  plan.isRecommended ? 'cta-glow' : 'bg-primary/80 hover:bg-primary'
                 )}>
                   {plan.cta}
                   <Palette className="ml-2 w-5 h-5" />
