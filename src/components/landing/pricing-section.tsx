@@ -1,13 +1,16 @@
+"use client";
+
 import { SectionWrapper } from "./section-wrapper";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check, Palette } from "lucide-react";
 import { cn } from "@/lib/utils";
+import CountdownTimer from "./countdown-timer";
 
 const plans = [
   {
     name: "Plano Básico",
-    originalPrice: "R$67,00",
+    originalPrice: "R$67",
     price: "R$19",
     priceDescription: "Acesso vitalício",
     features: [
@@ -20,7 +23,7 @@ const plans = [
   },
   {
     name: "Plano Completo",
-    originalPrice: "R$97,00",
+    originalPrice: "R$97",
     price: "R$27",
     priceDescription: "Acesso vitalício",
     features: [
@@ -49,58 +52,66 @@ export default function PricingSection() {
           Acesso vitalício e imediato para transformar os momentos em família.
         </p>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-4xl mx-auto items-start">
-        {plans.map((plan) => (
-          <Card key={plan.name} className={cn(
-            "shadow-lg relative flex flex-col h-full bg-card overflow-hidden",
-            plan.isRecommended ? 'border-accent border-2' : ''
-          )}>
-            <CardHeader className="items-center text-center pt-10">
-              <CardTitle className="text-2xl font-headline">{plan.name}</CardTitle>
-              <div className="text-center">
-                <p className="text-xl font-normal text-muted-foreground">De <span className="line-through">{plan.originalPrice}</span> por</p>
-                <div className="text-5xl font-bold font-headline py-2">
-                  {plan.price}
-                  <span className="text-lg font-bold text-muted-foreground"> / {plan.priceDescription}</span>
+
+      <div className="max-w-4xl mx-auto">
+        <div className="bg-footer text-white text-center py-2 px-4 rounded-t-lg">
+          <span className="font-semibold">OFERTA ENCERRA EM </span>
+          <CountdownTimer initialMinutes={14} initialSeconds={35} />
+        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
+          {plans.map((plan) => (
+            <Card key={plan.name} className={cn(
+              "shadow-lg relative flex flex-col h-full bg-card overflow-hidden rounded-t-none",
+              plan.isRecommended ? 'border-accent border-2 lg:rounded-bl-lg' : 'lg:rounded-br-lg'
+            )}>
+              <CardHeader className="items-center text-center pt-10">
+                <CardTitle className="text-2xl font-headline">{plan.name}</CardTitle>
+                <div className="text-center">
+                  <p className="text-xl font-semibold text-muted-foreground">De <span className="line-through">{plan.originalPrice}</span> por</p>
+                  <div className="text-5xl font-bold font-headline py-2">
+                    {plan.price}
+                  </div>
+                  <p className="font-bold text-lg text-muted-foreground"> / {plan.priceDescription}</p>
                 </div>
-              </div>
-            </CardHeader>
-            <CardContent className="space-y-6 flex-grow">
-              <ul className="space-y-3">
-                {plan.features.map((feature, index) => (
-                  <li key={index} className="flex items-center gap-3">
-                    <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center shrink-0">
-                      <Check className="w-3.5 h-3.5 text-white" />
-                    </div>
-                    <span className="text-secondary-foreground">{feature}</span>
-                  </li>
-                ))}
-              </ul>
-              {plan.bonuses && (
-                 <div className="border-t border-dashed pt-6 space-y-4">
-                    <h4 className="font-headline font-semibold text-center text-primary-foreground">Bônus Exclusivos:</h4>
-                    <ul className="space-y-3">
-                      {plan.bonuses.map((bonus, index) => (
-                         <li key={index} className="flex items-center gap-3 text-sm">
-                            <Palette className="w-4 h-4 text-yellow-500 fill-yellow-400 shrink-0" />
-                            <span className="text-secondary-foreground font-semibold">{bonus.description}</span>
-                         </li>
-                      ))}
-                    </ul>
-                </div>
-              )}
-            </CardContent>
-            <CardFooter className="mt-auto p-6">
-              <a href="#" className="w-full">
-                <Button size="lg" className={cn("w-full font-bold text-lg h-14 rounded-full cta-glow")}>
-                  {plan.cta}
-                  <Palette className="ml-2 w-5 h-5" />
-                </Button>
-              </a>
-            </CardFooter>
-          </Card>
-        ))}
+              </CardHeader>
+              <CardContent className="space-y-6 flex-grow">
+                <ul className="space-y-3">
+                  {plan.features.map((feature, index) => (
+                    <li key={index} className="flex items-center gap-3">
+                      <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center shrink-0">
+                        <Check className="w-3.5 h-3.5 text-white" />
+                      </div>
+                      <span className="text-secondary-foreground">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+                {plan.bonuses && (
+                   <div className="border-t border-dashed pt-6 space-y-4">
+                      <h4 className="font-headline font-semibold text-center text-primary-foreground">Bônus Exclusivos:</h4>
+                      <ul className="space-y-3">
+                        {plan.bonuses.map((bonus, index) => (
+                           <li key={index} className="flex items-center gap-3 text-sm">
+                              <Palette className="w-4 h-4 text-yellow-500 fill-yellow-400 shrink-0" />
+                              <span className="text-secondary-foreground font-semibold">{bonus.description}</span>
+                           </li>
+                        ))}
+                      </ul>
+                  </div>
+                )}
+              </CardContent>
+              <CardFooter className="mt-auto p-6">
+                <a href="#" className="w-full">
+                  <Button size="lg" className={cn("w-full font-bold text-lg h-14 rounded-full cta-glow")}>
+                    {plan.cta}
+                    <Palette className="ml-2 w-5 h-5" />
+                  </Button>
+                </a>
+              </CardFooter>
+            </Card>
+          ))}
+        </div>
       </div>
+
        <p className="text-center text-sm text-muted-foreground mt-8">
         Compra segura e 100% garantida. Você tem 7 dias para testar ou seu dinheiro de volta.
       </p>
