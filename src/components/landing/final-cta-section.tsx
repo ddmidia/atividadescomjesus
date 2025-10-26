@@ -7,7 +7,7 @@ export default function FinalCtaSection() {
   return (
     <SectionWrapper className="bg-footer text-center text-white">
       <div className="relative z-10 flex flex-col items-center gap-6">
-        <h2 className="text-3xl md:text-4xl font-headline font-bold">
+        <h2 className="text-2xl md:text-3xl font-headline font-bold">
           Plante a fé no coração dos seus filhos desde cedo.
         </h2>
         <p className="text-lg md:text-xl max-w-3xl text-gray-300">

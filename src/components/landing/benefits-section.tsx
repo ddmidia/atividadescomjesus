@@ -29,8 +29,8 @@ const benefits = [
 export default function BenefitsSection() {
   return (
     <SectionWrapper className="pt-8">
-      <div className="text-center space-y-4 mb-4">
-        <h2 className="text-2xl md:text-3xl font-headline font-bold text-headline">
+      <div className="text-center space-y-2 mb-4">
+        <h2 className="text-2xl font-headline font-bold text-headline">
           Por que o Colorindo Fé e Alegria é diferente?
         </h2>
       </div>

@@ -6,10 +6,10 @@ import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const features = [
-  { text: "<span class=\"font-bold\">100 desenhos bíblicos</span> para ensinar a fé enquanto eles se divertem colorindo." },
-  { text: "<span class=\"font-bold\">30 histórias infantis</span> que tornam o aprendizado espiritual leve e envolvente." },
-  { text: "<span class=\"font-bold\">Bônus:</span> Guia para mães com atividades práticas para fortalecer a fé em família." },
-  { text: "<span class=\"font-bold\">Bônus:</span> Calendário da Fé 2026 para criar uma rotina divertida e com propósito." },
+  { text: "<strong class=\"font-bold\">100 desenhos bíblicos</strong> para ensinar a fé enquanto eles se divertem colorindo." },
+  { text: "<strong class=\"font-bold\">30 histórias infantis</strong> que tornam o aprendizado espiritual leve e envolvente." },
+  { text: "<strong class=\"font-bold\">Bônus:</strong> Guia para mães com atividades práticas para fortalecer a fé em família." },
+  { text: "<strong class=\"font-bold\">Bônus:</strong> Calendário da Fé 2026 para criar uma rotina divertida e com propósito." },
 ];
 
 export default function WhatYouGetSection() {
@@ -17,8 +17,8 @@ export default function WhatYouGetSection() {
 
   return (
     <SectionWrapper className="bg-secondary pt-8">
-      <div className="text-center space-y-4 mb-8">
-        <h2 className="text-xl md:text-2xl font-headline font-bold text-headline">
+      <div className="text-center space-y-4 mb-4">
+        <h2 className="text-xl font-headline font-bold text-headline">
           Dentro do Colorindo Fé e Alegria, você recebe:
         </h2>
       </div>
