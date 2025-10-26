@@ -19,7 +19,7 @@ export default function HeroSection() {
             Transforme o tempo de tela em momentos de fé e aprendizado com Deus!
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto md:mx-0">
-            <strong className="text-foreground">Mais de 100 Atividades e Histórias</strong> prontas para imprimir e ensinar valores cristãos de forma leve e divertida.
+            <strong className="text-foreground">Mais de 100 Atividades e Histórias</strong> <strong className="text-foreground">prontas para imprimir</strong> e ensinar valores cristãos de forma leve e divertida.
           </p>
           <a href="#pricing">
             <Button size="lg" className={cn("cta-glow text-lg font-bold h-14 px-10 self-start rounded-full")}>
@@ -53,7 +53,7 @@ export default function HeroSection() {
             Transforme o tempo de tela em momentos de fé e aprendizado com Deus!
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl">
-            <strong className="text-foreground">Mais de 100 Atividades e Histórias</strong> prontas para imprimir e ensinar valores cristãos de forma leve e divertida.
+            <strong className="text-foreground">Mais de 100 Atividades e Histórias</strong> <strong className="text-foreground">prontas para imprimir</strong> e ensinar valores cristãos de forma leve e divertida.
           </p>
           <div className="w-full max-w-lg">
             <Card className="overflow-hidden shadow-none rounded-2xl bg-transparent border-none">
