@@ -4,7 +4,7 @@
 import { SectionWrapper } from "./section-wrapper";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Check, Palette, Users } from "lucide-react";
+import { Check, Gift, Users } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const plans = [
@@ -70,10 +70,10 @@ export default function PricingSection() {
                 </div>
               )}
               <CardHeader className="items-center text-center pt-10">
-                <CardTitle className="text-2xl font-headline">{plan.name}</CardTitle>
+                <CardTitle className="text-xl font-headline">{plan.name}</CardTitle>
                 <div className="text-center">
-                  <p className="text-xl font-semibold text-muted-foreground">De <span className="line-through">{plan.originalPrice}</span> por</p>
-                  <div className="text-5xl font-bold font-headline py-2">
+                  <p className="text-lg font-semibold text-muted-foreground">De <span className="line-through">{plan.originalPrice}</span> por</p>
+                  <div className="text-4xl font-bold font-headline py-2">
                     {plan.price}
                   </div>
                   <p className="font-bold text-lg text-muted-foreground"> / {plan.priceDescription}</p>
@@ -96,8 +96,8 @@ export default function PricingSection() {
                       <ul className="space-y-3">
                         {plan.bonuses.map((bonus, index) => (
                            <li key={index} className="flex items-center gap-3 text-sm">
-                              <div className="w-5 h-5 rounded-full flex items-center justify-center shrink-0 bg-accent">
-                                <Palette className="w-3 h-3 text-white" />
+                              <div className="w-5 h-5 rounded-full flex items-center justify-center shrink-0 bg-green-500">
+                                <Gift className="w-3 h-3 text-white" />
                               </div>
                               <span className="text-secondary-foreground font-semibold">{bonus.description}</span>
                            </li>
@@ -111,7 +111,7 @@ export default function PricingSection() {
                   {plan.isRecommended ? (
                     <Button size="lg" className={cn("w-full font-bold text-lg h-14 rounded-full cta-glow")}>
                       <span className="text-glow text-accent-foreground">COMPRAR PLANO COMPLETO</span>
-                      <Palette className="ml-2 w-5 h-5 text-glow text-accent-foreground" />
+                      <Gift className="ml-2 w-5 h-5 text-glow text-accent-foreground" />
                     </Button>
                   ) : (
                     <Button variant="outline" size="lg" className={cn("w-full font-bold text-lg h-14 rounded-full border-accent text-accent hover:bg-accent/10 hover:text-accent")}>
