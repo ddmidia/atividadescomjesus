@@ -27,7 +27,7 @@ export default function CreatorSection() {
               Quem está por trás do Colorindo Fé e Alegria
             </h3>
             <p className="text-muted-foreground">
-              “Sou mãe, catequista e apaixonada por ensinar a fé de forma prática e divertida. Criei esse material para que mais famílias vivam momentos de amor, aprendizado e fé em casa.”
+              “Sou mãe, catequista, psicóloga infantil e apaixonada por ensinar a fé de forma prática e divertida. Criei esse material para que mais famílias vivam momentos de amor, aprendizado e fé em casa.”
             </p>
             <p className="font-bold text-lg text-primary-foreground">- Mônica Alencar</p>
           </div>
