@@ -91,7 +91,10 @@ export default function PricingSection() {
             </CardContent>
             <CardFooter className="mt-auto p-6">
               <a href="#" className="w-full">
-                <Button size="lg" className={cn("w-full font-bold text-lg h-14", plan.isRecommended ? 'cta-glow' : 'bg-primary/80 hover:bg-primary')}>
+                <Button size="lg" className={cn(
+                  "w-full font-bold text-lg h-14 rounded-full",
+                  plan.isRecommended ? 'cta-glow' : 'bg-primary/80 hover:bg-primary'
+                )}>
                   {plan.cta}
                   {plan.isRecommended && <Palette className="ml-2 w-5 h-5" />}
                 </Button>
