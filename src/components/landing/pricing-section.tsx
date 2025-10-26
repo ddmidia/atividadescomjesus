@@ -43,7 +43,7 @@ const plans = [
 
 export default function PricingSection() {
   return (
-    <SectionWrapper id="pricing" className="bg-primary/20 scroll-mt-20">
+    <SectionWrapper id="pricing" className="bg-primary/20 scroll-mt-20 pt-8">
       <div className="text-center space-y-4 mb-12 max-w-3xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-headline font-bold text-headline">
           Escolha o plano ideal e comece a se divertir
@@ -51,8 +51,8 @@ export default function PricingSection() {
         <p className="text-muted-foreground text-lg">
           Acesso vitalício • Imprima quantas vezes quiser
         </p>
-        <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground bg-card/80 p-3 rounded-lg border border-primary/30 max-w-md mx-auto">
-            <Users className="w-5 h-5 text-accent shrink-0"/>
+        <div className="flex items-start text-left justify-center gap-2 text-sm text-muted-foreground bg-card/80 p-3 rounded-lg border border-primary/30 max-w-md mx-auto">
+            <Users className="w-5 h-5 text-accent shrink-0 mt-0.5"/>
             <span className="font-medium">Mais de 2 mil famílias já transformaram o aprendizado de fé em diversão diária.</span>
         </div>
       </div>
