@@ -84,7 +84,7 @@ export default function PricingSection() {
                   {plan.features.map((feature, index) => (
                     <li key={index} className="flex items-center gap-3">
                       <div className="w-5 h-5 bg-accent rounded-full flex items-center justify-center shrink-0">
-                        <Check className="w-3.5 h-3.5 text-white" />
+                        <Check className="w-3.5 h-3.5 text-accent-foreground" />
                       </div>
                       <span className="text-secondary-foreground font-semibold">{feature}</span>
                     </li>
@@ -96,7 +96,9 @@ export default function PricingSection() {
                       <ul className="space-y-3">
                         {plan.bonuses.map((bonus, index) => (
                            <li key={index} className="flex items-center gap-3 text-sm">
-                              <Palette className="w-4 h-4 text-accent fill-accent/20 shrink-0" />
+                              <div className="w-5 h-5 bg-accent/20 rounded-full flex items-center justify-center shrink-0">
+                                <Palette className="w-3 h-3 text-accent" />
+                              </div>
                               <span className="text-secondary-foreground font-semibold">{bonus.description}</span>
                            </li>
                         ))}
@@ -108,8 +110,8 @@ export default function PricingSection() {
                 <a href="#pricing" className="w-full">
                   {plan.isRecommended ? (
                     <Button size="lg" className={cn("w-full font-bold text-lg h-14 rounded-full cta-glow")}>
-                      <span className="text-glow text-white/90">{plan.cta}</span>
-                      <Palette className="ml-2 w-5 h-5 text-glow text-white/90" />
+                      <span className="text-glow text-accent-foreground">{plan.cta}</span>
+                      <Palette className="ml-2 w-5 h-5 text-glow text-accent-foreground" />
                     </Button>
                   ) : (
                     <Button variant="outline" size="lg" className={cn("w-full font-bold text-lg h-14 rounded-full border-accent text-accent hover:bg-accent/10 hover:text-accent")}>
