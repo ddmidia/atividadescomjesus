@@ -56,7 +56,7 @@ export default function PricingSection() {
           )}>
             {plan.isRecommended && (
               <Badge className="absolute -top-4 left-1/2 -translate-x-1/2 bg-accent text-accent-foreground font-bold py-1 px-4">
-                MAIS ESCOLHIDO
+                Mais Escolhido pelas Famílias
               </Badge>
             )}
             <CardHeader className="items-center text-center pt-10">
