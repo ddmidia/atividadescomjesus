@@ -17,7 +17,7 @@ export default function WhatYouGetSection() {
   return (
     <SectionWrapper className="bg-secondary">
       <div className="text-center space-y-4 mb-12">
-        <h2 className="text-3xl md:text-4xl font-headline font-bold">
+        <h2 className="text-3xl md:text-4xl font-headline font-bold text-headline">
           Dentro do Colorindo Fé e Alegria, você recebe:
         </h2>
       </div>
@@ -25,7 +25,7 @@ export default function WhatYouGetSection() {
         <ul className="space-y-6">
           {features.map((feature, index) => (
             <li key={index} className="flex items-start gap-4">
-              <CheckCircle2 className="w-8 h-8 text-accent-foreground mt-1 shrink-0" />
+              <CheckCircle2 className="w-8 h-8 text-accent mt-1 shrink-0" />
               <span className="text-lg text-secondary-foreground">{feature}</span>
             </li>
           ))}

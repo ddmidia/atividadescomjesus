@@ -71,7 +71,7 @@ export default function TestimonialsSection() {
   return (
     <SectionWrapper>
       <div className="text-center space-y-4 mb-12">
-        <h2 className="text-3xl md:text-4xl font-headline font-bold">
+        <h2 className="text-3xl md:text-4xl font-headline font-bold text-headline">
           O que as famílias estão dizendo
         </h2>
       </div>
@@ -101,7 +101,7 @@ export default function TestimonialsSection() {
                     )}
                     <div className="flex text-accent">
                       {[...Array(5)].map((_, i) => (
-                        <StarIcon key={i} className="w-5 h-5" />
+                        <StarIcon key={i} className="w-5 h-5 text-yellow-400" />
                       ))}
                     </div>
                     <p className="italic text-base text-muted-foreground flex-grow">“{testimonial.quote}”</p>

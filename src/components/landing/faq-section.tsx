@@ -38,7 +38,7 @@ export default function FaqSection() {
   return (
     <SectionWrapper>
       <div className="max-w-3xl mx-auto text-center space-y-6 mb-12">
-        <h2 className="text-3xl md:text-4xl font-headline font-bold">
+        <h2 className="text-3xl md:text-4xl font-headline font-bold text-headline">
           Ainda tem dúvidas?
         </h2>
         <p className="text-muted-foreground text-lg">

@@ -37,7 +37,7 @@ export default function PricingSection() {
   return (
     <SectionWrapper id="pricing" className="bg-primary/20">
       <div className="text-center space-y-4 mb-12">
-        <h2 className="text-3xl md:text-4xl font-headline font-bold">
+        <h2 className="text-3xl md:text-4xl font-headline font-bold text-headline">
           Escolha o plano ideal para sua família
         </h2>
         <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
@@ -77,8 +77,8 @@ export default function PricingSection() {
                     <ul className="space-y-3">
                       {plan.bonuses.map((bonus, index) => (
                          <li key={index} className="flex items-center gap-3 text-sm">
-                            <Star className="w-4 h-4 text-accent-foreground shrink-0" />
-                            <span className="text-secondary-foreground">{bonus.description}</span>
+                            <Star className="w-4 h-4 text-yellow-500 fill-yellow-400 shrink-0" />
+                            <span className="text-secondary-foreground font-semibold">{bonus.description}</span>
                          </li>
                       ))}
                     </ul>
