@@ -42,7 +42,7 @@ const plans = [
 
 export default function PricingSection() {
   return (
-    <SectionWrapper id="pricing" className="bg-primary/20">
+    <SectionWrapper id="pricing" className="bg-primary/20 scroll-mt-20">
       <div className="text-center space-y-4 mb-12">
         <h2 className="text-3xl md:text-4xl font-headline font-bold text-headline">
           Escolha o plano ideal para sua família
