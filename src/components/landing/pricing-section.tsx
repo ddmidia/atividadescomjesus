@@ -2,7 +2,7 @@ import { SectionWrapper } from "./section-wrapper";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Check, Hand, Star } from "lucide-react";
+import { Check, Palette, Star } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const plans = [
@@ -55,7 +55,7 @@ export default function PricingSection() {
             plan.isRecommended ? 'border-accent border-2 animate-pulse-subtle' : ''
           )}>
             {plan.isRecommended && (
-              <Badge className="absolute -top-4 left-1/2 -translate-x-1/2 bg-footer text-white font-bold py-1 px-4 uppercase border-blue-950">
+              <Badge className="absolute -top-4 left-1/2 -translate-x-1/2 bg-accent text-accent-foreground font-bold py-1 px-4 uppercase">
                 + ESCOLHIDO PELAS FAMÍLIAS
               </Badge>
             )}
@@ -93,7 +93,7 @@ export default function PricingSection() {
               <a href="#" className="w-full">
                 <Button size="lg" className={cn("w-full font-bold text-lg h-14", plan.isRecommended ? 'cta-glow' : 'bg-primary/80 hover:bg-primary')}>
                   {plan.cta}
-                  {plan.isRecommended && <Hand className="ml-2 w-5 h-5" />}
+                  {plan.isRecommended && <Palette className="ml-2 w-5 h-5" />}
                 </Button>
               </a>
             </CardFooter>

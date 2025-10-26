@@ -1,6 +1,6 @@
 import { SectionWrapper } from "./section-wrapper";
 import { Button } from "@/components/ui/button";
-import { Sparkles } from "lucide-react";
+import { Palette } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export default function FinalCtaSection() {
@@ -15,7 +15,7 @@ export default function FinalCtaSection() {
         </p>
         <a href="#pricing">
           <Button size="lg" className={cn("cta-glow text-lg font-bold h-16 px-12 mt-4")}>
-            Acessar o Material Agora <Sparkles className="ml-2 h-5 w-5" />
+            Acessar o Material Agora <Palette className="ml-2 h-5 w-5" />
           </Button>
         </a>
       </div>

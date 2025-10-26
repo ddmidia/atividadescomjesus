@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { Sparkles } from "lucide-react";
+import { Palette } from "lucide-react";
 
 export default function HeroSection() {
   const heroImage = PlaceHolderImages.find(img => img.id === "hero-family-coloring");
@@ -21,7 +21,7 @@ export default function HeroSection() {
           </p>
           <a href="#pricing">
             <Button size="lg" className="cta-glow text-lg font-bold h-14 px-10 self-start">
-              Quero o Kit Agora <Sparkles className="ml-2 h-5 w-5" />
+              Quero o Kit Agora <Palette className="ml-2 h-5 w-5" />
             </Button>
           </a>
         </div>
@@ -72,7 +72,7 @@ export default function HeroSection() {
           </div>
           <a href="#pricing" className="w-full">
             <Button size="lg" className="cta-glow text-lg font-bold h-14 px-10 w-full">
-              Quero o Kit Agora <Sparkles className="ml-2 h-5 w-5" />
+              Quero o Kit Agora <Palette className="ml-2 h-5 w-5" />
             </Button>
           </a>
         </div>
