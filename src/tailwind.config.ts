@@ -24,8 +24,8 @@ export default {
       colors: {
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
-        footer: '#040719',
-        headline: '#040719',
+        footer: 'hsl(224, 33%, 17%)',
+        headline: 'hsl(224, 33%, 17%)',
         card: {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))',
@@ -97,15 +97,10 @@ export default {
             height: '0',
           },
         },
-        'pulse-subtle': {
-            '0%, 100%': { transform: 'scale(1)', boxShadow: '0 0 0 0 hsl(var(--accent) / 0.3)' },
-            '50%': { transform: 'scale(1.02)', boxShadow: '0 0 20px 8px hsl(var(--accent) / 0.15)' },
-        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
-        'pulse-subtle': 'pulse-subtle 8s ease-in-out infinite',
       },
     },
   },
