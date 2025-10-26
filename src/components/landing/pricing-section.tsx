@@ -115,7 +115,7 @@ export default function PricingSection() {
       </div>
 
        <p className="text-center text-sm text-muted-foreground mt-8">
-        Compra segura e 100% garantida. Você tem 7 dias para testar ou seu dinheiro de volta.
+        Compra 100% segura • PDF entregue por e-mail instantaneamente
       </p>
     </SectionWrapper>
   );
