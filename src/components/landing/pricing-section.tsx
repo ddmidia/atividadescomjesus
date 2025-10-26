@@ -4,7 +4,7 @@
 import { SectionWrapper } from "./section-wrapper";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Check, Palette } from "lucide-react";
+import { Check, Palette, Users } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const plans = [
@@ -44,13 +44,17 @@ const plans = [
 export default function PricingSection() {
   return (
     <SectionWrapper id="pricing" className="bg-primary/20 scroll-mt-20">
-      <div className="text-center space-y-4 mb-12">
+      <div className="text-center space-y-4 mb-12 max-w-3xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-headline font-bold text-headline">
-          Escolha o plano ideal para sua família
+          Escolha o plano ideal e comece a se divertir
         </h2>
-        <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-          Acesso vitalício e imediato para transformar os momentos em família.
+        <p className="text-muted-foreground text-lg">
+          Acesso vitalício • Imprima quantas vezes quiser
         </p>
+        <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground bg-card/80 p-3 rounded-lg border border-primary/30 max-w-md mx-auto">
+            <Users className="w-5 h-5 text-accent shrink-0"/>
+            <span className="font-medium">Mais de 2 mil famílias já transformaram o aprendizado de fé em diversão diária.</span>
+        </div>
       </div>
 
       <div className="max-w-4xl mx-auto">
