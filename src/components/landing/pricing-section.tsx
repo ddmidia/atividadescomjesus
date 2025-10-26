@@ -52,11 +52,11 @@ export default function PricingSection() {
         {plans.map((plan) => (
           <Card key={plan.name} className={cn(
             "shadow-lg relative flex flex-col h-full bg-card overflow-hidden",
-            plan.isRecommended ? 'border-accent border-2' : ''
+            plan.isRecommended ? 'border-accent border-2 animate-pulse-subtle' : ''
           )}>
             {plan.isRecommended && (
-              <div className="absolute -top-px left-1/2 -translate-x-1/2 w-[calc(100%+4px)]">
-                <div className={cn("cta-glow py-2 px-4 text-sm font-bold uppercase w-full text-center rounded-none border-0 border-b-2 border-accent/50")}>
+              <div className="absolute -top-4 left-1/2 -translate-x-1/2 w-fit">
+                <div className={cn("cta-glow py-1.5 px-6 text-sm font-bold uppercase text-center rounded-full")}>
                   + ESCOLHIDO PELAS FAMÍLIAS
                 </div>
               </div>
@@ -98,7 +98,7 @@ export default function PricingSection() {
                   plan.isRecommended ? 'cta-glow' : 'bg-primary/80 hover:bg-primary'
                 )}>
                   {plan.cta}
-                  {plan.isRecommended && <Palette className="ml-2 w-5 h-5" />}
+                  <Palette className="ml-2 w-5 h-5" />
                 </Button>
               </a>
             </CardFooter>
