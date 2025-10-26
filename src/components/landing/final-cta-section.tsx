@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 
 export default function FinalCtaSection() {
   return (
-    <SectionWrapper className="bg-[#151515] text-center text-white">
+    <SectionWrapper className="bg-footer text-center text-white">
       <div className="relative z-10 flex flex-col items-center gap-6">
         <h2 className="text-4xl md:text-5xl font-headline font-bold">
           Plante a fé no coração dos seus filhos desde cedo.
