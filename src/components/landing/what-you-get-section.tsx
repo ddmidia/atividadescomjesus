@@ -1,3 +1,4 @@
+
 import { SectionWrapper } from "./section-wrapper";
 import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle2 } from "lucide-react";
@@ -16,7 +17,7 @@ export default function WhatYouGetSection() {
 
   return (
     <SectionWrapper className="bg-secondary">
-      <div className="text-center space-y-4 mb-12">
+      <div className="text-center space-y-4 mb-8">
         <h2 className="text-3xl md:text-4xl font-headline font-bold text-headline">
           Dentro do Colorindo Fé e Alegria, você recebe:
         </h2>
