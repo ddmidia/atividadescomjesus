@@ -83,7 +83,7 @@ export default function PricingSection() {
                 <ul className="space-y-3">
                   {plan.features.map((feature, index) => (
                     <li key={index} className="flex items-center gap-3">
-                      <div className="w-5 h-5 bg-blue-500 rounded-full flex items-center justify-center shrink-0">
+                      <div className="w-5 h-5 bg-[#040719] rounded-full flex items-center justify-center shrink-0">
                         <Check className="w-3.5 h-3.5 text-white" />
                       </div>
                       <span className="text-secondary-foreground font-semibold">{feature}</span>
