@@ -37,7 +37,7 @@ const plans = [
       { name: "Bônus 2", description: "Calendário da Fé 2026" },
     ],
     isRecommended: true,
-    cta: "QUERO O PLANO COMPLETO",
+    cta: "COMPRAR O PLANO COMPLETO",
   },
 ];
 
