@@ -18,7 +18,7 @@ export default function HeroSection() {
             Transforme o tempo de tela em momentos de fé, alegria e aprendizado com Jesus!
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto md:mx-0">
-            Mais de 100 atividades prontas para imprimir e viver momentos de fé, aprendizado e conexão em família.
+            <strong className="text-foreground">Mais de 100 atividades</strong> prontas para imprimir e viver momentos de fé, aprendizado e conexão em família.
           </p>
           <a href="#pricing">
             <Button size="lg" className={cn("cta-glow text-lg font-bold h-14 px-10 self-start rounded-full")}>
@@ -52,7 +52,7 @@ export default function HeroSection() {
             Transforme o tempo de tela em momentos de fé, alegria e aprendizado com Jesus!
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl">
-            Mais de 100 atividades prontas para imprimir e viver momentos de fé, aprendizado e conexão em família.
+            <strong className="text-foreground">Mais de 100 atividades</strong> prontas para imprimir e viver momentos de fé, aprendizado e conexão em família.
           </p>
           <div className="w-full max-w-lg">
             <Card className="overflow-hidden shadow-none rounded-2xl bg-transparent border-none">
