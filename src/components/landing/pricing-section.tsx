@@ -55,20 +55,13 @@ export default function PricingSection() {
             "shadow-lg relative flex flex-col h-full bg-card overflow-hidden",
             plan.isRecommended ? 'border-accent border-2' : ''
           )}>
-            {plan.isRecommended && (
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                <div className="text-sm font-bold text-accent-foreground px-4 py-1 rounded-full cta-glow">
-                  + ESCOLHIDO PELAS FAMÍLIAS
-                </div>
-              </div>
-            )}
             <CardHeader className="items-center text-center pt-10">
               <CardTitle className="text-2xl font-headline">{plan.name}</CardTitle>
               <div className="text-center">
-                <p className="text-lg text-muted-foreground">De <span className="line-through">{plan.originalPrice}</span> por</p>
+                <p className="text-lg font-normal text-muted-foreground">De <span className="line-through">{plan.originalPrice}</span> por</p>
                 <div className="text-5xl font-bold font-headline py-2">
                   {plan.price}
-                  <span className="text-lg font-normal text-muted-foreground"> / {plan.priceDescription}</span>
+                  <span className="text-lg font-bold text-muted-foreground"> / {plan.priceDescription}</span>
                 </div>
               </div>
             </CardHeader>
