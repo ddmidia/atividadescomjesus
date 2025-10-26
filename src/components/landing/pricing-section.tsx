@@ -76,7 +76,7 @@ export default function PricingSection() {
                 <CardTitle className="text-xl font-headline">{plan.name}</CardTitle>
                 <div className="text-center">
                   <p className="text-lg font-semibold text-muted-foreground">De <span className="line-through">{plan.originalPrice}</span> por</p>
-                  <div className="text-4xl font-bold font-headline py-2">
+                  <div className="text-4xl font-bold font-headline py-2 text-accent">
                     {plan.price}
                   </div>
                   <p className="font-bold text-lg text-muted-foreground"> / {plan.priceDescription}</p>
