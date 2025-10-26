@@ -96,10 +96,16 @@ export default function PricingSection() {
               </CardContent>
               <CardFooter className="mt-auto p-6">
                 <a href="#" className="w-full">
-                  <Button size="lg" className={cn("w-full font-bold text-lg h-14 rounded-full cta-glow")}>
-                    <span className="text-glow text-white/90">{plan.cta}</span>
-                    <Palette className="ml-2 w-5 h-5 text-glow text-white/90" />
-                  </Button>
+                  {plan.isRecommended ? (
+                    <Button size="lg" className={cn("w-full font-bold text-lg h-14 rounded-full cta-glow")}>
+                      <span className="text-glow text-white/90">{plan.cta}</span>
+                      <Palette className="ml-2 w-5 h-5 text-glow text-white/90" />
+                    </Button>
+                  ) : (
+                    <Button variant="outline" size="lg" className={cn("w-full font-bold text-lg h-14 rounded-full border-accent text-accent hover:bg-accent/10")}>
+                      {plan.cta}
+                    </Button>
+                  )}
                 </a>
               </CardFooter>
             </Card>
