@@ -12,7 +12,17 @@ export default function CreatorSection() {
   return (
     <SectionWrapper className="bg-primary/5 pt-0 pb-8">
       <div className="max-w-4xl mx-auto flex flex-col items-center gap-6 md:gap-0">
-        <Card className="w-full shadow-xl bg-secondary -mt-24">
+        <div className="w-full px-4 md:hidden">
+            <div className="w-full px-4 -mt-16">
+            <a href="#pricing" className="w-full">
+                <Button size="lg" className={cn("cta-glow text-lg font-bold h-14 px-10 w-full rounded-full")}>
+                <span className="text-glow text-white/90">BAIXAR KIT DE ATIVIDADES</span> <Palette className="ml-2 h-5 w-5 text-glow text-white/90" />
+                </Button>
+            </a>
+            </div>
+        </div>
+
+        <Card className="w-full shadow-xl bg-secondary md:-mt-24 mt-6">
           <CardContent className="p-8 md:p-12 grid md:grid-cols-3 gap-8 items-center">
             <div className="md:col-span-1 flex justify-center">
               {creatorImage && (
@@ -37,14 +47,6 @@ export default function CreatorSection() {
             </div>
           </CardContent>
         </Card>
-        
-        <div className="md:hidden w-full px-4 -mt-4">
-           <a href="#pricing" className="w-full">
-            <Button size="lg" className={cn("cta-glow text-lg font-bold h-14 px-10 w-full rounded-full")}>
-              <span className="text-glow text-white/90">BAIXAR KIT DE ATIVIDADES</span> <Palette className="ml-2 h-5 w-5 text-glow text-white/90" />
-            </Button>
-          </a>
-        </div>
       </div>
     </SectionWrapper>
   );
