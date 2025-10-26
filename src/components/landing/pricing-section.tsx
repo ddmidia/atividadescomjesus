@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 const plans = [
   {
     name: "Plano Básico",
-    originalPrice: "R$67",
+    originalPrice: "R$67,00",
     price: "R$19",
     priceDescription: "Acesso vitalício",
     features: [
@@ -20,7 +20,7 @@ const plans = [
   },
   {
     name: "Plano Completo",
-    originalPrice: "R$97",
+    originalPrice: "R$97,00",
     price: "R$29",
     priceDescription: "Acesso vitalício",
     features: [
@@ -53,12 +53,12 @@ export default function PricingSection() {
         {plans.map((plan) => (
           <Card key={plan.name} className={cn(
             "shadow-lg relative flex flex-col h-full bg-card overflow-hidden",
-            plan.isRecommended ? 'border-accent border-2' : ''
+            plan.isRecommended ? 'border-accent border-2 animate-pulse-subtle' : ''
           )}>
             <CardHeader className="items-center text-center pt-10">
               <CardTitle className="text-2xl font-headline">{plan.name}</CardTitle>
               <div className="text-center">
-                <p className="text-sm text-muted-foreground">De <span className="line-through">{plan.originalPrice}</span> por</p>
+                <p className="text-base text-muted-foreground">De <span className="line-through">{plan.originalPrice}</span> por</p>
                 <div className="text-5xl font-bold font-headline py-2">
                   {plan.price}
                   <span className="text-lg font-normal text-muted-foreground"> / {plan.priceDescription}</span>
@@ -92,7 +92,7 @@ export default function PricingSection() {
             </CardContent>
             <CardFooter className="mt-auto p-6">
               <a href="#" className="w-full">
-                <Button size="lg" className="w-full font-bold text-lg h-14 rounded-full btn-glow">
+                <Button size="lg" className={cn("w-full font-bold text-lg h-14 rounded-full", plan.isRecommended && "cta-glow")}>
                   {plan.cta}
                   <Palette className="ml-2 w-5 h-5" />
                 </Button>
