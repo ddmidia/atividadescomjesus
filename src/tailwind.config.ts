@@ -25,7 +25,7 @@ export default {
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         footer: 'hsl(224, 33%, 17%)',
-        headline: '#C5B8A5',
+        headline: 'hsl(224, 33%, 17%)',
         card: {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))',
@@ -47,7 +47,7 @@ export default {
           foreground: 'hsl(var(--muted-foreground))',
         },
         accent: {
-          DEFAULT: '#B2AC88',
+          DEFAULT: '#ef1767',
           foreground: 'hsl(var(--accent-foreground))',
         },
         destructive: {
