@@ -45,31 +45,31 @@
     {
       "id": "coloring-page-1",
       "description": "Coloring page of Jesus with children.",
-      "imageUrl": "https://storage.googleapis.com/fpls-backend.appspot.com/coloring_pages/001.png",
+      "imageUrl": "https://imgur.com/ftZhqxf.png",
       "imageHint": "Jesus children coloring"
     },
     {
       "id": "coloring-page-2",
       "description": "Coloring page of Noah's Ark.",
-      "imageUrl": "https://storage.googleapis.com/fpls-backend.appspot.com/coloring_pages/002.png",
+      "imageUrl": "https://imgur.com/t1e1Oln.png",
       "imageHint": "noah ark coloring"
     },
     {
       "id": "coloring-page-3",
       "description": "Coloring page of Daniel in the lion's den.",
-      "imageUrl": "https://storage.googleapis.com/fpls-backend.appspot.com/coloring_pages/003.png",
+      "imageUrl": "https://imgur.com/ACvzWvq.png",
       "imageHint": "daniel lion coloring"
     },
     {
       "id": "coloring-page-4",
       "description": "Coloring page of David and Goliath.",
-      "imageUrl": "https://storage.googleapis.com/fpls-backend.appspot.com/coloring_pages/004.png",
+      "imageUrl": "https://imgur.com/OITcyrO.png",
       "imageHint": "david goliath coloring"
     },
     {
       "id": "coloring-page-5",
       "description": "Coloring page of the Nativity scene.",
-      "imageUrl": "https://storage.googleapis.com/fpls-backend.appspot.com/coloring_pages/005.png",
+      "imageUrl": "https://imgur.com/NTQVUP5.png",
       "imageHint": "nativity scene coloring"
     }
   ]

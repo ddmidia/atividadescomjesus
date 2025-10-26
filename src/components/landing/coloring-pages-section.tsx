@@ -9,11 +9,13 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
+  type CarouselApi,
 } from "@/components/ui/carousel";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import Image from "next/image";
 import Autoplay from "embla-carousel-autoplay";
 import React from "react";
+import { cn } from "@/lib/utils";
 
 const coloringPages = [
   PlaceHolderImages.find((img) => img.id === "coloring-page-1"),
@@ -25,8 +27,26 @@ const coloringPages = [
 
 export default function ColoringPagesSection() {
   const plugin = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true })
+    Autoplay({ delay: 2500, stopOnInteraction: true })
   );
+
+  const [api, setApi] = React.useState<CarouselApi>();
+  const [current, setCurrent] = React.useState(0);
+  const [count, setCount] = React.useState(0);
+
+  React.useEffect(() => {
+    if (!api) {
+      return;
+    }
+
+    setCount(api.scrollSnapList().length);
+    setCurrent(api.selectedScrollSnap() + 1);
+
+    api.on("select", () => {
+      setCurrent(api.selectedScrollSnap() + 1);
+    });
+  }, [api]);
+
 
   return (
     <SectionWrapper>
@@ -40,6 +60,7 @@ export default function ColoringPagesSection() {
       </div>
 
       <Carousel
+        setApi={setApi}
         plugins={[plugin.current]}
         className="w-full max-w-xl mx-auto"
         onMouseEnter={plugin.current.stop}
@@ -70,9 +91,23 @@ export default function ColoringPagesSection() {
         <CarouselPrevious className="hidden sm:flex" />
         <CarouselNext className="hidden sm:flex" />
       </Carousel>
-      <p className="text-center text-muted-foreground mt-4 text-sm">
-        Arraste para o lado
-      </p>
+      
+      <div className="flex flex-col items-center justify-center gap-2 mt-4">
+        <div className="flex items-center gap-2">
+            {Array.from({ length: count }).map((_, i) => (
+                <span
+                    key={i}
+                    className={cn(
+                        'h-2.5 rounded-full transition-all duration-300',
+                        i + 1 === current ? 'w-6 bg-purple-800' : 'w-2.5 bg-purple-200'
+                    )}
+                />
+            ))}
+        </div>
+         <p className="text-center text-muted-foreground text-sm">
+          Arraste para o lado
+        </p>
+      </div>
     </SectionWrapper>
   );
 }
