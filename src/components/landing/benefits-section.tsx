@@ -1,3 +1,4 @@
+
 import { SectionWrapper } from "./section-wrapper";
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Bird, Pencil, Users, BookOpen } from "lucide-react";
@@ -33,7 +34,7 @@ export default function BenefitsSection() {
           Por que o Colorindo Fé e Alegria é diferente?
         </h2>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {benefits.map((benefit, index) => (
           <Card key={index} className="text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
             <CardHeader className="items-center p-4">
