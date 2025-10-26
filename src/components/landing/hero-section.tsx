@@ -22,7 +22,7 @@ export default function HeroSection() {
           </p>
           <a href="#pricing">
             <Button size="lg" className={cn("cta-glow text-lg font-bold h-14 px-10 self-start rounded-full")}>
-              <span className="text-glow text-white/90">QUERO O KIT AGORA</span> <Palette className="ml-2 h-5 w-5 text-glow text-white/90" />
+              <span className="text-glow text-white/90">BAIXAR KIT DE ATIVIDADES</span> <Palette className="ml-2 h-5 w-5 text-glow text-white/90" />
             </Button>
           </a>
         </div>
@@ -73,7 +73,7 @@ export default function HeroSection() {
           </div>
           <a href="#pricing" className="w-full">
             <Button size="lg" className={cn("cta-glow text-lg font-bold h-14 px-10 w-full rounded-full")}>
-              <span className="text-glow text-white/90">QUERO O KIT AGORA</span> <Palette className="ml-2 h-5 w-5 text-glow text-white/90" />
+              <span className="text-glow text-white/90">BAIXAR KIT DE ATIVIDADES</span> <Palette className="ml-2 h-5 w-5 text-glow text-white/90" />
             </Button>
           </a>
         </div>
