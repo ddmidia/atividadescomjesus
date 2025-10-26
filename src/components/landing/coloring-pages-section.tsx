@@ -99,7 +99,7 @@ export default function ColoringPagesSection() {
                     key={i}
                     className={cn(
                         'h-2.5 rounded-full transition-all duration-300',
-                        i + 1 === current ? 'w-6 bg-purple-800' : 'w-2.5 bg-purple-200'
+                        i + 1 === current ? 'w-6 bg-accent' : 'w-2.5 bg-accent/20'
                     )}
                 />
             ))}
