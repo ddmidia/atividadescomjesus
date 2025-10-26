@@ -44,7 +44,7 @@ const StarIcon = (props: React.SVGProps<SVGSVGElement>) => (
 export default function TestimonialsSection() {
   return (
     <SectionWrapper>
-      <div className="text-center space-y-4 mb-12">
+      <div className="text-center space-y-4 mb-8">
         <h2 className="text-3xl md:text-4xl font-headline font-bold text-headline">
           O que as famílias estão dizendo
         </h2>
@@ -52,7 +52,7 @@ export default function TestimonialsSection() {
       <div className="max-w-xl mx-auto grid grid-cols-1 gap-8">
         {testimonials.map((testimonial, index) => (
           <Card key={index} className="bg-card/90 shadow-lg rounded-xl overflow-hidden border border-primary/20">
-            <CardContent className="p-8 flex flex-col items-center text-center gap-4">
+            <CardContent className="p-6 flex flex-col items-center text-center gap-2">
               {testimonial.image && (
                 <Image
                   src={testimonial.image.imageUrl}
@@ -60,14 +60,14 @@ export default function TestimonialsSection() {
                   width={80}
                   height={80}
                   data-ai-hint={testimonial.image.imageHint}
-                  className="rounded-full w-20 h-20 object-cover border-4 border-white shadow-md"
+                  className="rounded-full w-16 h-16 object-cover border-4 border-white shadow-md"
                 />
               )}
-              <div className="flex flex-col">
-                <p className="font-headline font-bold text-xl text-primary-foreground mt-2">{testimonial.name}</p>
+              <div className="flex flex-col mt-2">
+                <p className="font-headline font-bold text-lg text-primary-foreground">{testimonial.name}</p>
                 <p className="text-sm text-muted-foreground">{testimonial.role}</p>
               </div>
-              <div className="flex text-yellow-400">
+              <div className="flex text-yellow-400 my-1">
                 {[...Array(5)].map((_, i) => (
                   <StarIcon key={i} className="w-5 h-5" />
                 ))}
