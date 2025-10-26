@@ -21,7 +21,7 @@ const plans = [
   {
     name: "Plano Completo",
     originalPrice: "R$97,00",
-    price: "R$29",
+    price: "R$27",
     priceDescription: "Acesso vitalício",
     features: [
       "Tudo do plano básico, e mais...",
@@ -53,12 +53,19 @@ export default function PricingSection() {
         {plans.map((plan) => (
           <Card key={plan.name} className={cn(
             "shadow-lg relative flex flex-col h-full bg-card overflow-hidden",
-            plan.isRecommended ? 'border-accent border-2 animate-pulse-subtle' : ''
+            plan.isRecommended ? 'border-accent border-2' : ''
           )}>
+            {plan.isRecommended && (
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                <div className="text-sm font-bold text-accent-foreground px-4 py-1 rounded-full cta-glow">
+                  + ESCOLHIDO PELAS FAMÍLIAS
+                </div>
+              </div>
+            )}
             <CardHeader className="items-center text-center pt-10">
               <CardTitle className="text-2xl font-headline">{plan.name}</CardTitle>
               <div className="text-center">
-                <p className="text-base text-muted-foreground">De <span className="line-through">{plan.originalPrice}</span> por</p>
+                <p className="text-lg text-muted-foreground">De <span className="line-through">{plan.originalPrice}</span> por</p>
                 <div className="text-5xl font-bold font-headline py-2">
                   {plan.price}
                   <span className="text-lg font-normal text-muted-foreground"> / {plan.priceDescription}</span>
@@ -92,7 +99,7 @@ export default function PricingSection() {
             </CardContent>
             <CardFooter className="mt-auto p-6">
               <a href="#" className="w-full">
-                <Button size="lg" className={cn("w-full font-bold text-lg h-14 rounded-full", plan.isRecommended && "cta-glow")}>
+                <Button size="lg" className={cn("w-full font-bold text-lg h-14 rounded-full cta-glow")}>
                   {plan.cta}
                   <Palette className="ml-2 w-5 h-5" />
                 </Button>
