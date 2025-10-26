@@ -45,7 +45,7 @@ export default function PricingSection() {
   return (
     <SectionWrapper id="pricing" className="bg-secondary scroll-mt-20 pt-8 pb-12">
       <div className="text-center space-y-4 mb-12 max-w-3xl mx-auto">
-        <h2 className="text-2xl md:text-3xl font-headline font-bold text-headline">
+        <h2 className="text-xl md:text-2xl font-headline font-bold text-headline">
           Escolha o plano ideal e comece a se divertir
         </h2>
         <p className="text-muted-foreground text-lg">
@@ -65,16 +65,14 @@ export default function PricingSection() {
               plan.isRecommended ? 'border-accent border-2' : 'border'
             )}>
               {plan.isRecommended && (
-                <>
-                  <div className="card-glow" />
-                  <div className="absolute top-0 right-0 w-32 h-32">
-                    <div className="absolute transform rotate-45 bg-accent text-center text-accent-foreground font-semibold py-1 right-[-68px] top-[32px] w-[170px] shine-effect">
-                      MAIS VENDIDO
-                    </div>
-                  </div>
-                </>
+                <div className="card-glow" />
               )}
-              <CardHeader className="items-center text-center pt-10">
+              <CardHeader className="items-center text-center pt-8">
+                 {plan.isRecommended && (
+                  <div className="bg-accent text-accent-foreground text-xs font-bold px-3 py-1 rounded-full shadow-lg mb-4">
+                    MAIS VENDIDO
+                  </div>
+                )}
                 <CardTitle className="text-xl font-headline">{plan.name}</CardTitle>
                 <div className="text-center">
                   <p className="text-lg font-semibold text-muted-foreground">De <span className="line-through">{plan.originalPrice}</span> por</p>
