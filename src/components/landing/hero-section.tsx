@@ -16,10 +16,10 @@ export default function HeroSection() {
         {/* Text content for larger screens */}
         <div className="hidden md:flex flex-col space-y-6 text-center md:text-left">
           <h1 className="text-3xl md:text-4xl font-headline font-bold tracking-tighter text-headline">
-            Transforme o tempo de tela em momentos de fé, alegria e aprendizado com Jesus!
+            Transforme o tempo de tela em momentos de fé e aprendizado com Deus!
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto md:mx-0">
-            <strong className="text-foreground">Mais de 100 atividades prontas para imprimir</strong> e viver momentos de fé, aprendizado e conexão em família.
+            <strong className="text-foreground">Mais de 100 atividades</strong> <strong className="text-foreground">prontas para imprimir</strong> e viver momentos de conexão e aprendizado em família.
           </p>
           <a href="#pricing">
             <Button size="lg" className={cn("cta-glow text-lg font-bold h-14 px-10 self-start rounded-full")}>
@@ -50,10 +50,10 @@ export default function HeroSection() {
         {/* Mobile layout: Headline, Subheadline, Image, Button */}
         <div className="md:hidden flex flex-col items-center text-center space-y-6">
           <h1 className="text-3xl font-headline font-bold tracking-tighter text-headline">
-            Transforme o tempo de tela em momentos de fé, alegria e aprendizado com Jesus!
+            Transforme o tempo de tela em momentos de fé e aprendizado com Deus!
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl">
-            <strong className="text-foreground">Mais de 100 atividades prontas para imprimir</strong> e viver momentos de fé, aprendizado e conexão em família.
+            <strong className="text-foreground">Mais de 100 atividades</strong> <strong className="text-foreground">prontas para imprimir</strong> e viver momentos de conexão e aprendizado em família.
           </p>
           <div className="w-full max-w-lg">
             <Card className="overflow-hidden shadow-none rounded-2xl bg-transparent border-none">
