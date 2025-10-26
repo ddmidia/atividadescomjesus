@@ -29,12 +29,12 @@ const benefits = [
 export default function BenefitsSection() {
   return (
     <SectionWrapper className="pt-8">
-      <div className="text-center space-y-4 mb-8">
-        <h2 className="text-3xl md:text-4xl font-headline font-bold text-headline">
+      <div className="text-center space-y-4 mb-4">
+        <h2 className="text-2xl md:text-3xl font-headline font-bold text-headline">
           Por que o Colorindo Fé e Alegria é diferente?
         </h2>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2">
         {benefits.map((benefit, index) => (
           <Card key={index} className="text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
             <CardHeader className="items-center p-4">

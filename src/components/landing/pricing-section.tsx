@@ -45,7 +45,7 @@ export default function PricingSection() {
   return (
     <SectionWrapper id="pricing" className="bg-secondary scroll-mt-20 pt-8 pb-12">
       <div className="text-center space-y-4 mb-12 max-w-3xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-headline font-bold text-headline">
+        <h2 className="text-2xl md:text-3xl font-headline font-bold text-headline">
           Escolha o plano ideal e comece a se divertir
         </h2>
         <p className="text-muted-foreground text-lg">

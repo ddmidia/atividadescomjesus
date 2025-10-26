@@ -18,7 +18,7 @@ export default function WhatYouGetSection() {
   return (
     <SectionWrapper className="bg-secondary">
       <div className="text-center space-y-4 mb-4">
-        <h2 className="text-3xl md:text-4xl font-headline font-bold text-headline">
+        <h2 className="text-2xl md:text-3xl font-headline font-bold text-headline">
           Dentro do Colorindo Fé e Alegria, você recebe:
         </h2>
       </div>

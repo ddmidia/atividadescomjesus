@@ -14,7 +14,7 @@ export default function HeroSection() {
         
         {/* Text content for larger screens */}
         <div className="hidden md:flex flex-col space-y-6 text-center md:text-left">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-headline font-bold tracking-tighter text-headline">
+          <h1 className="text-4xl md:text-5xl font-headline font-bold tracking-tighter text-headline">
             Transforme o tempo de tela em momentos de fé, alegria e aprendizado com Jesus!
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto md:mx-0">
@@ -48,7 +48,7 @@ export default function HeroSection() {
 
         {/* Mobile layout: Headline, Subheadline, Image, Button */}
         <div className="md:hidden flex flex-col items-center text-center space-y-6">
-          <h1 className="text-4xl font-headline font-bold tracking-tighter text-headline">
+          <h1 className="text-3xl font-headline font-bold tracking-tighter text-headline">
             Transforme o tempo de tela em momentos de fé, alegria e aprendizado com Jesus!
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl">
