@@ -75,7 +75,7 @@ body {
     --sidebar-accent: 240 3.7% 15.9%;
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-ring: 217.2_ 91.2% 59.8%;
   }
 }
 
@@ -110,5 +110,14 @@ body {
 
   .text-glow {
     text-shadow: 0 0 8px currentColor;
+  }
+
+  .card-glow {
+    @apply relative;
+  }
+  .card-glow::before {
+    content: '';
+    @apply absolute -inset-2 -z-10 bg-accent/30 rounded-2xl blur-2xl transition-all duration-300;
+    opacity: 0.2;
   }
 }

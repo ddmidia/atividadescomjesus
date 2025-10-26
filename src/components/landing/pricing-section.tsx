@@ -45,7 +45,7 @@ export default function PricingSection() {
   return (
     <SectionWrapper id="pricing" className="bg-secondary scroll-mt-20 pt-8 pb-12">
       <div className="text-center space-y-4 mb-12 max-w-3xl mx-auto">
-        <h2 className="text-2xl md:text-3xl font-headline font-bold text-headline">
+        <h2 className="text-xl md:text-2xl font-headline font-bold text-headline">
           Escolha o plano ideal e comece a se divertir
         </h2>
         <p className="text-muted-foreground text-lg">
@@ -62,7 +62,7 @@ export default function PricingSection() {
           {plans.map((plan) => (
             <Card key={plan.name} className={cn(
               "shadow-lg relative flex flex-col h-full bg-card overflow-hidden rounded-lg",
-              plan.isRecommended ? 'border-accent border-2' : 'border'
+              plan.isRecommended ? 'border-accent border-2 card-glow' : 'border'
             )}>
               {plan.isRecommended && (
                 <div className="absolute top-0 right-0 bg-accent text-accent-foreground text-xs font-bold px-4 py-1.5 rounded-bl-lg z-10">
@@ -83,7 +83,7 @@ export default function PricingSection() {
                 <ul className="space-y-3">
                   {plan.features.map((feature, index) => (
                     <li key={index} className="flex items-center gap-3">
-                      <div className="w-5 h-5 rounded-full flex items-center justify-center shrink-0" style={{ backgroundColor: '#040719' }}>
+                      <div className="w-5 h-5 rounded-full flex items-center justify-center shrink-0 bg-green-500">
                         <Check className="w-3.5 h-3.5 text-white" />
                       </div>
                       <span className="text-secondary-foreground font-semibold">{feature}</span>
@@ -96,7 +96,7 @@ export default function PricingSection() {
                       <ul className="space-y-3">
                         {plan.bonuses.map((bonus, index) => (
                            <li key={index} className="flex items-center gap-3 text-sm">
-                              <div className="w-5 h-5 rounded-full flex items-center justify-center shrink-0" style={{ backgroundColor: '#040719' }}>
+                              <div className="w-5 h-5 rounded-full flex items-center justify-center shrink-0 bg-accent">
                                 <Palette className="w-3 h-3 text-white" />
                               </div>
                               <span className="text-secondary-foreground font-semibold">{bonus.description}</span>
