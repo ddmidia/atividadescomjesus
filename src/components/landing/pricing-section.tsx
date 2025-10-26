@@ -60,6 +60,11 @@ export default function PricingSection() {
               "shadow-lg relative flex flex-col h-full bg-card overflow-hidden rounded-lg",
               plan.isRecommended ? 'border-accent border-2' : 'border'
             )}>
+              {plan.isRecommended && (
+                <div className="absolute top-0 right-0 bg-accent text-accent-foreground text-xs font-bold px-4 py-1.5 rounded-bl-lg z-10">
+                  MAIS VENDIDO
+                </div>
+              )}
               <CardHeader className="items-center text-center pt-10">
                 <CardTitle className="text-2xl font-headline">{plan.name}</CardTitle>
                 <div className="text-center">
