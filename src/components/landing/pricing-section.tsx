@@ -45,15 +45,15 @@ export default function PricingSection() {
   return (
     <SectionWrapper id="pricing" className="bg-secondary scroll-mt-20 pt-8 pb-12">
       <div className="text-center space-y-4 mb-12 max-w-3xl mx-auto">
-        <h2 className="text-lg md:text-xl font-headline font-bold text-headline">
+        <h2 className="text-xl md:text-2xl font-headline font-bold text-headline">
           Escolha o plano ideal e comece a se divertir
         </h2>
         <p className="text-muted-foreground text-lg">
           Acesso vitalício • Imprima quantas vezes quiser
         </p>
-        <div className="flex items-center text-center justify-center gap-3 text-sm text-muted-foreground bg-card/80 p-3 rounded-lg border border-primary/30 max-w-md mx-auto">
+        <div className="flex items-center justify-center gap-3 text-sm text-muted-foreground bg-card/80 p-3 rounded-lg border border-primary/30 max-w-md mx-auto">
             <Users className="w-6 h-6 text-green-500 shrink-0"/>
-            <span className="font-medium">Mais de 2 mil famílias já transformaram o aprendizado de fé em diversão diária.</span>
+            <span className="font-medium text-left">Mais de 2 mil famílias já transformaram o aprendizado de fé em diversão diária.</span>
         </div>
       </div>
 
@@ -69,7 +69,7 @@ export default function PricingSection() {
                   <div className="absolute top-0 right-0 bg-accent text-accent-foreground text-xs font-bold px-4 py-1.5 rounded-bl-lg z-10">
                     MAIS VENDIDO
                   </div>
-                  <div className="absolute inset-0 -z-10 bg-accent/30 rounded-2xl blur-2xl transition-all duration-300 opacity-20" />
+                  <div className="card-glow" />
                 </>
               )}
               <CardHeader className="items-center text-center pt-10">
@@ -99,7 +99,7 @@ export default function PricingSection() {
                       <ul className="space-y-3">
                         {plan.bonuses.map((bonus, index) => (
                            <li key={index} className="flex items-center gap-3 text-sm">
-                              <div className="w-5 h-5 rounded-full flex items-center justify-center shrink-0 bg-green-500">
+                              <div className="w-5 h-5 rounded-full flex items-center justify-center shrink-0 bg-accent">
                                 <Gift className="w-3 h-3 text-white" />
                               </div>
                               <span className="text-secondary-foreground font-semibold">{bonus.description}</span>
