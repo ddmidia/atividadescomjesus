@@ -55,7 +55,7 @@ export default function PricingSection() {
             plan.isRecommended ? 'border-accent border-2 animate-pulse-subtle' : ''
           )}>
             {plan.isRecommended && (
-              <Badge className="absolute -top-4 left-1/2 -translate-x-1/2 bg-accent text-accent-foreground font-bold py-1 px-4 uppercase">
+              <Badge className="absolute -top-4 left-1/2 -translate-x-1/2 bg-yellow-500 text-black font-bold py-1 px-4 uppercase border-yellow-600">
                 + ESCOLHIDO PELAS FAMÍLIAS
               </Badge>
             )}
