@@ -5,10 +5,10 @@ import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const features = [
-  "100 páginas de desenhos bíblicos para imprimir e colorir",
-  "30 histórias inspiradoras sobre Jesus e os santos",
-  "Bônus 1: Guia para mães com atividades de fé em família",
-  "Bônus 2: Calendário da Fé 2026 (edição exclusiva)",
+  "100 desenhos bíblicos para ensinar a fé enquanto eles se divertem colorindo.",
+  "30 histórias infantis que tornam o aprendizado espiritual leve e envolvente.",
+  "Bônus: Guia para mães com atividades práticas para fortalecer a fé em família.",
+  "Bônus: Calendário da Fé 2026 para criar uma rotina divertida e com propósito.",
 ];
 
 export default function WhatYouGetSection() {

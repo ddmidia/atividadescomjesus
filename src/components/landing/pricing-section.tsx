@@ -10,9 +10,9 @@ const plans = [
     name: "Plano Básico",
     price: "R$19",
     features: [
-      "Kit com 100 desenhos bíblicos",
-      "Acesso imediato para impressão",
-      "Suporte via e-mail",
+      "100 desenhos bíblicos para ensinar fé",
+      "Acesso imediato para imprimir quando quiser",
+      "Suporte individual via e-mail",
     ],
     isRecommended: false,
   },
@@ -20,14 +20,14 @@ const plans = [
     name: "Plano Completo",
     price: "R$29",
     features: [
-      "Tudo do plano básico",
-      "30 histórias inspiradoras sobre os santos",
-      "Guia de atividades de fé em família",
-      "Calendário da Fé Católico 2026",
+      "Tudo do plano básico, e mais...",
+      "Histórias que tornam o aprendizado espiritual leve",
+      "Guia prático para criar momentos de fé em família",
+      "Calendário para uma rotina divertida e com propósito",
     ],
     bonuses: [
-      { name: "Bônus 1", description: "Guia de Atividades" },
-      { name: "Bônus 2", description: "Calendário da Fé" },
+      { name: "Bônus 1", description: "Guia de Atividades em Família" },
+      { name: "Bônus 2", description: "Calendário da Fé 2026" },
     ],
     isRecommended: true,
   },
@@ -86,10 +86,12 @@ export default function PricingSection() {
               )}
             </CardContent>
             <CardFooter className="mt-auto">
-              <Button size="lg" className={cn("w-full font-bold text-lg h-14", plan.isRecommended ? 'cta-glow' : 'bg-primary/80 hover:bg-primary')}>
-                {plan.isRecommended ? "Quero o Plano Completo" : "Comprar Plano Básico"}
-                {plan.isRecommended && <Hand className="ml-2 w-5 h-5" />}
-              </Button>
+              <a href="#pricing" className="w-full">
+                <Button size="lg" className={cn("w-full font-bold text-lg h-14", plan.isRecommended ? 'cta-glow' : 'bg-primary/80 hover:bg-primary')}>
+                  {plan.isRecommended ? "Quero o Plano Completo" : "Comprar Plano Básico"}
+                  {plan.isRecommended && <Hand className="ml-2 w-5 h-5" />}
+                </Button>
+              </a>
             </CardFooter>
           </Card>
         ))}
