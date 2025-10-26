@@ -8,6 +8,15 @@ import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import React from "react";
 import { cn } from "@/lib/utils";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+  type CarouselApi,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 const testimonials = [
   {
@@ -42,6 +51,27 @@ const StarIcon = (props: React.SVGProps<SVGSVGElement>) => (
 );
 
 export default function TestimonialsSection() {
+  const plugin = React.useRef(
+    Autoplay({ delay: 3500, stopOnInteraction: true })
+  );
+
+  const [api, setApi] = React.useState<CarouselApi>();
+  const [current, setCurrent] = React.useState(0);
+  const [count, setCount] = React.useState(0);
+
+  React.useEffect(() => {
+    if (!api) {
+      return;
+    }
+
+    setCount(api.scrollSnapList().length);
+    setCurrent(api.selectedScrollSnap() + 1);
+
+    api.on("select", () => {
+      setCurrent(api.selectedScrollSnap() + 1);
+    });
+  }, [api]);
+
   return (
     <SectionWrapper className="pb-8">
       <div className="text-center space-y-4 mb-8">
@@ -49,33 +79,65 @@ export default function TestimonialsSection() {
           O que as famílias estão dizendo
         </h2>
       </div>
-      <div className="max-w-xl mx-auto grid grid-cols-1 gap-8">
-        {testimonials.map((testimonial, index) => (
-          <Card key={index} className="bg-card/90 shadow-lg rounded-xl overflow-hidden border border-primary/20">
-            <CardContent className="p-6 flex flex-col items-center text-center gap-2">
-              {testimonial.image && (
-                <Image
-                  src={testimonial.image.imageUrl}
-                  alt={testimonial.image.description}
-                  width={80}
-                  height={80}
-                  data-ai-hint={testimonial.image.imageHint}
-                  className="rounded-full w-16 h-16 object-cover border-4 border-white shadow-md"
-                />
+
+      <Carousel
+        setApi={setApi}
+        plugins={[plugin.current]}
+        className="w-full max-w-xl mx-auto"
+        onMouseEnter={plugin.current.stop}
+        onMouseLeave={plugin.current.reset}
+      >
+        <CarouselContent>
+          {testimonials.map((testimonial, index) => (
+            <CarouselItem key={index}>
+              <div className="p-1">
+                <Card className="bg-card/90 shadow-lg rounded-xl overflow-hidden border border-primary/20 h-full">
+                  <CardContent className="p-6 flex flex-col items-center text-center gap-2">
+                    {testimonial.image && (
+                      <Image
+                        src={testimonial.image.imageUrl}
+                        alt={testimonial.image.description}
+                        width={80}
+                        height={80}
+                        data-ai-hint={testimonial.image.imageHint}
+                        className="rounded-full w-16 h-16 object-cover border-4 border-white shadow-md"
+                      />
+                    )}
+                    <div className="flex flex-col mt-2">
+                      <p className="font-headline font-bold text-lg text-primary-foreground">{testimonial.name}</p>
+                      <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                    </div>
+                    <div className="flex text-yellow-400 my-1">
+                      {[...Array(5)].map((_, i) => (
+                        <StarIcon key={i} className="w-5 h-5" />
+                      ))}
+                    </div>
+                    <p className="italic text-base text-muted-foreground flex-grow">“{testimonial.quote}”</p>
+                  </CardContent>
+                </Card>
+              </div>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+        <CarouselPrevious className="hidden sm:flex" />
+        <CarouselNext className="hidden sm:flex" />
+      </Carousel>
+
+      <div className="flex flex-col items-center justify-center gap-2 mt-4">
+        <div className="flex items-center gap-2">
+          {Array.from({ length: count }).map((_, i) => (
+            <span
+              key={i}
+              className={cn(
+                'h-2.5 rounded-full transition-all duration-300',
+                i + 1 === current ? 'w-6 bg-accent' : 'w-2.5 bg-accent/20'
               )}
-              <div className="flex flex-col mt-2">
-                <p className="font-headline font-bold text-lg text-primary-foreground">{testimonial.name}</p>
-                <p className="text-sm text-muted-foreground">{testimonial.role}</p>
-              </div>
-              <div className="flex text-yellow-400 my-1">
-                {[...Array(5)].map((_, i) => (
-                  <StarIcon key={i} className="w-5 h-5" />
-                ))}
-              </div>
-              <p className="italic text-base text-muted-foreground flex-grow">“{testimonial.quote}”</p>
-            </CardContent>
-          </Card>
-        ))}
+            />
+          ))}
+        </div>
+        <p className="text-center text-muted-foreground text-sm">
+          Arraste para o lado
+        </p>
       </div>
     </SectionWrapper>
   );
