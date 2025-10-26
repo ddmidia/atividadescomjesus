@@ -2,9 +2,6 @@ import { SectionWrapper } from "./section-wrapper";
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { Button } from "@/components/ui/button";
-import { Palette } from "lucide-react";
-import { cn } from "@/lib/utils";
 
 export default function CreatorSection() {
   const creatorImage = PlaceHolderImages.find(img => img.id === "creator-monica");
@@ -37,14 +34,6 @@ export default function CreatorSection() {
             </div>
           </CardContent>
         </Card>
-
-        <div className="w-full px-4 md:hidden mt-6">
-            <a href="#pricing" className="w-full">
-                <Button size="lg" className={cn("cta-glow text-lg font-bold h-14 px-10 w-full rounded-full")}>
-                <span className="text-glow text-white/90">BAIXAR KIT DE ATIVIDADES</span> <Palette className="ml-2 h-5 w-5 text-glow text-white/90" />
-                </Button>
-            </a>
-        </div>
       </div>
     </SectionWrapper>
   );

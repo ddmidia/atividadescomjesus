@@ -46,7 +46,7 @@ export default function HeroSection() {
           </Card>
         </div>
 
-        {/* Mobile layout: Headline, Subheadline, Image */}
+        {/* Mobile layout: Headline, Subheadline, Image, Button */}
         <div className="md:hidden flex flex-col items-center text-center space-y-6">
           <h1 className="text-4xl font-headline font-bold tracking-tighter text-headline">
             Transforme o tempo de tela em momentos de fé, alegria e aprendizado com Jesus!
@@ -71,6 +71,13 @@ export default function HeroSection() {
               </CardContent>
             </Card>
           </div>
+           <div className="w-full px-4 md:hidden mt-6">
+            <a href="#pricing" className="w-full">
+                <Button size="lg" className={cn("cta-glow text-lg font-bold h-14 px-10 w-full rounded-full")}>
+                <span className="text-glow text-white/90">BAIXAR KIT DE ATIVIDADES</span> <Palette className="ml-2 h-5 w-5 text-glow text-white/90" />
+                </Button>
+            </a>
+        </div>
         </div>
 
       </div>
