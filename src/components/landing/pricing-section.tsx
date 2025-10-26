@@ -51,8 +51,8 @@ export default function PricingSection() {
         <p className="text-muted-foreground text-lg">
           Acesso vitalício • Imprima quantas vezes quiser
         </p>
-        <div className="flex items-start text-left justify-center gap-2 text-sm text-muted-foreground bg-card/80 p-3 rounded-lg border border-primary/30 max-w-md mx-auto">
-            <Users className="w-5 h-5 text-accent shrink-0 mt-0.5"/>
+        <div className="flex items-start text-left justify-center gap-3 text-sm text-muted-foreground bg-card/80 p-3 rounded-lg border border-primary/30 max-w-md mx-auto">
+            <Users className="w-6 h-6 text-accent shrink-0 mt-0.5"/>
             <span className="font-medium">Mais de 2 mil famílias já transformaram o aprendizado de fé em diversão diária.</span>
         </div>
       </div>
@@ -83,8 +83,8 @@ export default function PricingSection() {
                 <ul className="space-y-3">
                   {plan.features.map((feature, index) => (
                     <li key={index} className="flex items-center gap-3">
-                      <div className="w-5 h-5 bg-accent rounded-full flex items-center justify-center shrink-0">
-                        <Check className="w-3.5 h-3.5 text-accent-foreground" />
+                      <div className="w-5 h-5 bg-blue-500 rounded-full flex items-center justify-center shrink-0">
+                        <Check className="w-3.5 h-3.5 text-white" />
                       </div>
                       <span className="text-secondary-foreground font-semibold">{feature}</span>
                     </li>
@@ -110,7 +110,7 @@ export default function PricingSection() {
                 <a href="#pricing" className="w-full">
                   {plan.isRecommended ? (
                     <Button size="lg" className={cn("w-full font-bold text-lg h-14 rounded-full cta-glow")}>
-                      <span className="text-glow text-accent-foreground">{plan.cta}</span>
+                      <span className="text-glow text-accent-foreground">COMPRAR PLANO COMPLETO</span>
                       <Palette className="ml-2 w-5 h-5 text-glow text-accent-foreground" />
                     </Button>
                   ) : (
