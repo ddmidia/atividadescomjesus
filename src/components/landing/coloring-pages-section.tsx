@@ -49,7 +49,7 @@ export default function ColoringPagesSection() {
 
 
   return (
-    <SectionWrapper className="pt-8">
+    <SectionWrapper className="pt-8 pb-0">
       <div className="text-center space-y-4 mb-8">
         <h2 className="text-3xl md:text-4xl font-headline font-bold text-headline">
           Desenhos inspiradores no estilo Bobbie Goods
