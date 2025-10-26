@@ -38,7 +38,7 @@ export default function BenefitsSection() {
         {benefits.map((benefit, index) => (
           <Card key={index} className="text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
             <CardHeader className="items-center p-4">
-              <div className="bg-card border-2 border-accent p-3 rounded-lg mb-3 aspect-square flex items-center justify-center">
+              <div className="bg-card border-2 border-accent p-3 rounded-full mb-3 aspect-square flex items-center justify-center">
                 {benefit.icon}
               </div>
               <CardTitle className="font-headline text-lg">{benefit.title}</CardTitle>
