@@ -7,8 +7,8 @@ export default function CreatorSection() {
   const creatorImage = PlaceHolderImages.find(img => img.id === "creator-monica");
 
   return (
-    <SectionWrapper className="bg-primary/20 pt-0 pb-8">
-      <Card className="max-w-4xl mx-auto shadow-xl bg-secondary">
+    <SectionWrapper className="bg-primary/5 pt-0 pb-8">
+      <Card className="max-w-4xl mx-auto shadow-xl bg-secondary -mt-24">
         <CardContent className="p-8 md:p-12 grid md:grid-cols-3 gap-8 items-center">
           <div className="md:col-span-1 flex justify-center">
             {creatorImage && (
