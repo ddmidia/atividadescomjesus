@@ -10,7 +10,7 @@ const plans = [
   {
     name: "Plano Básico",
     originalPrice: "R$67",
-    price: "R$19",
+    price: "R$17,00",
     priceDescription: "Acesso vitalício",
     features: [
       "100 desenhos bíblicos para ensinar fé enquanto eles se divertem colorindo.",
@@ -23,7 +23,7 @@ const plans = [
   {
     name: "Plano Completo",
     originalPrice: "R$97",
-    price: "R$27",
+    price: "R$27,00",
     priceDescription: "Acesso vitalício",
     features: [
       "Tudo do plano básico, e mais...",
