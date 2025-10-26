@@ -27,7 +27,7 @@ const coloringPages = [
 
 export default function ColoringPagesSection() {
   const plugin = React.useRef(
-    Autoplay({ delay: 2500, stopOnInteraction: true })
+    Autoplay({ delay: 2000, stopOnInteraction: true })
   );
 
   const [api, setApi] = React.useState<CarouselApi>();

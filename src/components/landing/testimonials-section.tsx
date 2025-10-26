@@ -52,7 +52,7 @@ const StarIcon = (props: React.SVGProps<SVGSVGElement>) => (
 
 export default function TestimonialsSection() {
   const plugin = React.useRef(
-    Autoplay({ delay: 3500, stopOnInteraction: true })
+    Autoplay({ delay: 3000, stopOnInteraction: true })
   );
 
   const [api, setApi] = React.useState<CarouselApi>();
