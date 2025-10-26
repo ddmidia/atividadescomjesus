@@ -51,15 +51,17 @@ export default function PricingSection() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-4xl mx-auto items-start">
         {plans.map((plan) => (
           <Card key={plan.name} className={cn(
-            "shadow-lg relative flex flex-col h-full bg-card",
-            plan.isRecommended ? 'border-accent border-2 animate-pulse-subtle' : ''
+            "shadow-lg relative flex flex-col h-full bg-card overflow-hidden",
+            plan.isRecommended ? 'border-accent border-2' : ''
           )}>
             {plan.isRecommended && (
-              <Badge className="absolute -top-4 left-1/2 -translate-x-1/2 bg-accent text-accent-foreground font-bold py-1 px-4 uppercase">
-                + ESCOLHIDO PELAS FAMÍLIAS
-              </Badge>
+              <div className="absolute -top-px left-1/2 -translate-x-1/2 w-[calc(100%+4px)]">
+                <div className={cn("cta-glow py-2 px-4 text-sm font-bold uppercase w-full text-center rounded-none border-0 border-b-2 border-accent/50")}>
+                  + ESCOLHIDO PELAS FAMÍLIAS
+                </div>
+              </div>
             )}
-            <CardHeader className="items-center text-center pt-10">
+            <CardHeader className={cn("items-center text-center", plan.isRecommended ? "pt-12" : "pt-10")}>
               <CardTitle className="text-2xl font-headline">{plan.name}</CardTitle>
               <div className="text-5xl font-bold font-headline py-4">
                 {plan.price}
