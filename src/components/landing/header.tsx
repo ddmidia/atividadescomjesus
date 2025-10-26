@@ -1,4 +1,4 @@
-import { Zap, Hourglass } from "lucide-react";
+import { Zap, AlarmClock } from "lucide-react";
 import CountdownTimer from "./countdown-timer";
 
 export default function Header() {
@@ -9,7 +9,7 @@ export default function Header() {
           DESCONTO ATIVADO <Zap size={16} className="inline-block" /> ENCERRA EM
         </span>
         <CountdownTimer initialMinutes={19} initialSeconds={59} />
-        <Hourglass size={16} className="inline-block" />
+        <AlarmClock size={16} className="inline-block" />
       </div>
     </header>
   );
