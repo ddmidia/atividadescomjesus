@@ -10,9 +10,9 @@ const plans = [
     name: "Plano Básico",
     price: "R$19",
     features: [
-      "100 desenhos bíblicos para ensinar fé",
-      "Acesso imediato para imprimir quando quiser",
-      "Suporte individual via e-mail",
+      "100 desenhos bíblicos para ensinar fé enquanto eles se divertem colorindo.",
+      "Acesso imediato para imprimir quando quiser.",
+      "Suporte individual via e-mail para tirar dúvidas.",
     ],
     isRecommended: false,
   },
@@ -21,9 +21,9 @@ const plans = [
     price: "R$29",
     features: [
       "Tudo do plano básico, e mais...",
-      "Histórias que tornam o aprendizado espiritual leve",
-      "Guia prático para criar momentos de fé em família",
-      "Calendário para uma rotina divertida e com propósito",
+      "Histórias infantis que tornam o aprendizado espiritual leve e envolvente.",
+      "Guia prático para criar momentos de fé em família.",
+      "Calendário da Fé 2026 para criar uma rotina divertida e com propósito.",
     ],
     bonuses: [
       { name: "Bônus 1", description: "Guia de Atividades em Família" },
@@ -48,7 +48,7 @@ export default function PricingSection() {
         {plans.map((plan) => (
           <Card key={plan.name} className={cn(
             "shadow-lg relative flex flex-col h-full",
-            plan.isRecommended ? 'border-accent border-2 shadow-accent/30' : 'bg-card'
+            plan.isRecommended ? 'border-accent border-2 animate-pulse-subtle' : 'bg-card'
           )}>
             {plan.isRecommended && (
               <Badge className="absolute -top-4 left-1/2 -translate-x-1/2 bg-accent text-accent-foreground font-bold py-1 px-4">

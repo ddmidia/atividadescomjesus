@@ -99,7 +99,7 @@ export default {
         },
         'pulse-subtle': {
             '0%, 100%': { transform: 'scale(1)', boxShadow: '0 0 0 0 hsl(var(--accent) / 0.5)' },
-            '50%': { transform: 'scale(1.03)', boxShadow: '0 0 0 12px hsl(var(--accent) / 0)' },
+            '50%': { transform: 'scale(1.02)', boxShadow: '0 0 20px 10px hsl(var(--accent) / 0.3)' },
         },
       },
       animation: {
