@@ -8,7 +8,7 @@ export default function CreatorSection() {
 
   return (
     <SectionWrapper className="bg-primary/20 pt-0 pb-8">
-      <Card className="max-w-4xl mx-auto shadow-xl">
+      <Card className="max-w-4xl mx-auto shadow-xl bg-secondary">
         <CardContent className="p-8 md:p-12 grid md:grid-cols-3 gap-8 items-center">
           <div className="md:col-span-1 flex justify-center">
             {creatorImage && (
