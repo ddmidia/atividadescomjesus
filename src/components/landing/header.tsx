@@ -7,7 +7,7 @@ export default function Header() {
       <div className="container mx-auto flex items-center justify-center text-center">
         <Hourglass className="w-4 h-4 mr-2" />
         <span className="font-semibold text-sm sm:text-base">SUA OFERTA ENCERRA EM&nbsp;</span>
-        <CountdownTimer initialMinutes={14} initialSeconds={35} />
+        <CountdownTimer initialMinutes={19} initialSeconds={59} />
       </div>
     </header>
   );
