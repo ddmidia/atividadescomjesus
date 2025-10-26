@@ -14,7 +14,7 @@ export default function FinalCtaSection() {
           Em poucos minutos, você já pode imprimir e viver momentos de amor e aprendizado em família — do jeitinho que Deus sonhou.
         </p>
         <a href="#pricing">
-          <Button size="lg" className={cn("cta-glow text-lg font-bold h-16 px-12 mt-4 rounded-full")}>
+          <Button size="lg" className={cn("cta-glow text-lg font-bold h-16 px-12 mt-4 rounded-full animate-pulse-subtle")}>
             Acessar o Material Agora <Palette className="ml-2 h-5 w-5" />
           </Button>
         </a>

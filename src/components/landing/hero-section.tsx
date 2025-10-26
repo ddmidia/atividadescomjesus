@@ -20,7 +20,7 @@ export default function HeroSection() {
             Mais de 100 atividades prontas para imprimir e viver momentos de fé, aprendizado e conexão em família.
           </p>
           <a href="#pricing">
-            <Button size="lg" className="cta-glow text-lg font-bold h-14 px-10 self-start rounded-full">
+            <Button size="lg" className="cta-glow text-lg font-bold h-14 px-10 self-start rounded-full animate-pulse-subtle">
               Quero o Kit Agora <Palette className="ml-2 h-5 w-5" />
             </Button>
           </a>
@@ -71,7 +71,7 @@ export default function HeroSection() {
             </Card>
           </div>
           <a href="#pricing" className="w-full">
-            <Button size="lg" className="cta-glow text-lg font-bold h-14 px-10 w-full rounded-full">
+            <Button size="lg" className="cta-glow text-lg font-bold h-14 px-10 w-full rounded-full animate-pulse-subtle">
               Quero o Kit Agora <Palette className="ml-2 h-5 w-5" />
             </Button>
           </a>
