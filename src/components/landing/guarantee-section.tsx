@@ -5,7 +5,7 @@ export default function GuaranteeSection() {
   return (
     <SectionWrapper>
       <div className="max-w-3xl mx-auto text-center flex flex-col items-center gap-6">
-        <ShieldCheck className="w-16 h-16 text-accent" />
+        <ShieldCheck className="w-16 h-16 text-accent" strokeWidth={1.5} />
         <h3 className="text-2xl md:text-3xl font-headline font-bold text-headline">
           Garantia de 7 Dias para sua tranquilidade
         </h3>
