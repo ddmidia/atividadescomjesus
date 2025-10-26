@@ -14,7 +14,7 @@ export default function HeroSection() {
         
         {/* Text content for larger screens */}
         <div className="hidden md:flex flex-col space-y-6 text-center md:text-left">
-          <h1 className="text-4xl md:text-5xl font-headline font-bold tracking-tighter text-headline">
+          <h1 className="text-3xl md:text-4xl font-headline font-bold tracking-tighter text-headline">
             Transforme o tempo de tela em momentos de fé, alegria e aprendizado com Jesus!
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto md:mx-0">
