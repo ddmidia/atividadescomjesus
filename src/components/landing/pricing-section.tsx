@@ -43,7 +43,7 @@ const plans = [
 
 export default function PricingSection() {
   return (
-    <SectionWrapper id="pricing" className="bg-primary/20 scroll-mt-20 pt-8">
+    <SectionWrapper id="pricing" className="bg-primary/20 scroll-mt-20 pt-8 pb-12">
       <div className="text-center space-y-4 mb-12 max-w-3xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-headline font-bold text-headline">
           Escolha o plano ideal e comece a se divertir
@@ -83,7 +83,7 @@ export default function PricingSection() {
                 <ul className="space-y-3">
                   {plan.features.map((feature, index) => (
                     <li key={index} className="flex items-center gap-3">
-                      <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center shrink-0">
+                      <div className="w-5 h-5 bg-accent rounded-full flex items-center justify-center shrink-0">
                         <Check className="w-3.5 h-3.5 text-white" />
                       </div>
                       <span className="text-secondary-foreground font-semibold">{feature}</span>
