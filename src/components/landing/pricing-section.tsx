@@ -19,7 +19,7 @@ const plans = [
       "Suporte individual via e-mail para tirar dúvidas.",
     ],
     isRecommended: false,
-    cta: "Comprar Plano Básico",
+    cta: "COMPRAR PLANO BÁSICO",
   },
   {
     name: "Plano Completo",
@@ -37,7 +37,7 @@ const plans = [
       { name: "Bônus 2", description: "Calendário da Fé 2026" },
     ],
     isRecommended: true,
-    cta: "Quero o Plano Completo",
+    cta: "QUERO O PLANO COMPLETO",
   },
 ];
 
