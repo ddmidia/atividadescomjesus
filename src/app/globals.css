@@ -106,4 +106,8 @@ body {
   .cta-glow:hover::after {
      box-shadow: 0 0 35px 2px hsl(var(--accent) / 0.8);
   }
+
+  .text-glow {
+    text-shadow: 0 0 8px hsl(var(--accent) / 0.5);
+  }
 }
