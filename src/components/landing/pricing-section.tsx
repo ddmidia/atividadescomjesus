@@ -66,8 +66,10 @@ export default function PricingSection() {
             )}>
               {plan.isRecommended && (
                 <>
-                  <div className="absolute top-0 right-0 bg-accent text-accent-foreground text-xs font-bold px-4 py-1.5 rounded-bl-lg z-10 shine-effect">
-                    MAIS VENDIDO
+                  <div className="absolute top-0 right-0 h-24 w-24 overflow-hidden z-10">
+                    <div className="absolute top-6 -right-5 w-full bg-accent text-accent-foreground text-xs font-bold text-center transform rotate-45 py-1 shine-effect">
+                        MAIS VENDIDO
+                    </div>
                   </div>
                   <div className="card-glow" />
                 </>
