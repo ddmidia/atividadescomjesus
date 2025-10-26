@@ -1,3 +1,4 @@
+
 "use client";
 
 import { SectionWrapper } from "./section-wrapper";
@@ -95,14 +96,14 @@ export default function PricingSection() {
                 )}
               </CardContent>
               <CardFooter className="mt-auto p-6">
-                <a href="#" className="w-full">
+                <a href="#pricing" className="w-full">
                   {plan.isRecommended ? (
                     <Button size="lg" className={cn("w-full font-bold text-lg h-14 rounded-full cta-glow")}>
                       <span className="text-glow text-white/90">{plan.cta}</span>
                       <Palette className="ml-2 w-5 h-5 text-glow text-white/90" />
                     </Button>
                   ) : (
-                    <Button variant="outline" size="lg" className={cn("w-full font-bold text-lg h-14 rounded-full border-accent text-accent hover:bg-accent/10")}>
+                    <Button variant="outline" size="lg" className={cn("w-full font-bold text-lg h-14 rounded-full border-accent text-accent hover:bg-accent/10 hover:text-accent")}>
                       {plan.cta}
                     </Button>
                   )}
