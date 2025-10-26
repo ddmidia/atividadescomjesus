@@ -1,7 +1,7 @@
 import { SectionWrapper } from "./section-wrapper";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Check, Palette, Star } from "lucide-react";
+import { Check, Palette } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const plans = [
@@ -53,14 +53,7 @@ export default function PricingSection() {
             "shadow-lg relative flex flex-col h-full bg-card overflow-hidden",
             plan.isRecommended ? 'border-accent border-2 animate-pulse-subtle' : ''
           )}>
-            {plan.isRecommended && (
-              <div className="absolute -top-4 left-1/2 -translate-x-1/2 w-fit">
-                <div className={cn("cta-glow py-1.5 px-6 text-sm font-bold uppercase text-center rounded-full")}>
-                  + ESCOLHIDO PELAS FAMÍLIAS
-                </div>
-              </div>
-            )}
-            <CardHeader className={cn("items-center text-center", plan.isRecommended ? "pt-12" : "pt-10")}>
+            <CardHeader className="items-center text-center pt-10">
               <CardTitle className="text-2xl font-headline">{plan.name}</CardTitle>
               <div className="text-5xl font-bold font-headline py-4">
                 {plan.price}
@@ -82,7 +75,7 @@ export default function PricingSection() {
                     <ul className="space-y-3">
                       {plan.bonuses.map((bonus, index) => (
                          <li key={index} className="flex items-center gap-3 text-sm">
-                            <Star className="w-4 h-4 text-yellow-500 fill-yellow-400 shrink-0" />
+                            <Palette className="w-4 h-4 text-yellow-500 fill-yellow-400 shrink-0" />
                             <span className="text-secondary-foreground font-semibold">{bonus.description}</span>
                          </li>
                       ))}
