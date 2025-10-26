@@ -15,7 +15,7 @@ export default function FinalCtaSection() {
         </p>
         <a href="#pricing">
           <Button size="lg" className={cn("cta-glow text-lg font-bold h-16 px-12 mt-4 rounded-full")}>
-            <span className="text-glow text-white/90">Acessar o Material Agora</span> <Palette className="ml-2 h-5 w-5 text-glow" />
+            <span className="text-glow text-white/90">Acessar o Material Agora</span> <Palette className="ml-2 h-5 w-5 text-glow text-white/90" />
           </Button>
         </a>
       </div>
