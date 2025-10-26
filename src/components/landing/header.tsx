@@ -1,13 +1,11 @@
-import { Paintbrush } from 'lucide-react';
+import CountdownTimer from "./countdown-timer";
 
 export default function Header() {
   return (
-    <header className="py-4 px-4 md:px-6 bg-background/80 backdrop-blur-sm sticky top-0 z-40">
-      <div className="container mx-auto flex items-center justify-center">
-        <div className="flex items-center gap-2">
-          <Paintbrush className="w-6 h-6 text-primary-foreground bg-primary p-1 rounded-md" />
-          <span className="font-headline text-xl font-bold">Colorindo Fé e Alegria</span>
-        </div>
+    <header className="py-2 px-4 md:px-6 bg-footer text-white sticky top-0 z-40">
+      <div className="container mx-auto flex items-center justify-center text-center">
+        <span className="font-semibold text-sm sm:text-base">OFERTA ENCERRA EM </span>
+        <CountdownTimer initialMinutes={14} initialSeconds={35} />
       </div>
     </header>
   );

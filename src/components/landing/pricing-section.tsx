@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check, Palette } from "lucide-react";
 import { cn } from "@/lib/utils";
-import CountdownTimer from "./countdown-timer";
 
 const plans = [
   {
@@ -54,15 +53,11 @@ export default function PricingSection() {
       </div>
 
       <div className="max-w-4xl mx-auto">
-        <div className="bg-footer text-white text-center py-2 px-4 rounded-t-lg">
-          <span className="font-semibold">OFERTA ENCERRA EM </span>
-          <CountdownTimer initialMinutes={14} initialSeconds={35} />
-        </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
           {plans.map((plan) => (
             <Card key={plan.name} className={cn(
-              "shadow-lg relative flex flex-col h-full bg-card overflow-hidden rounded-t-none",
-              plan.isRecommended ? 'border-accent border-2 lg:rounded-bl-lg' : 'lg:rounded-br-lg'
+              "shadow-lg relative flex flex-col h-full bg-card overflow-hidden",
+              plan.isRecommended ? 'border-accent border-2 lg:rounded-l-lg' : 'lg:border-l-0 lg:rounded-r-lg'
             )}>
               <CardHeader className="items-center text-center pt-10">
                 <CardTitle className="text-2xl font-headline">{plan.name}</CardTitle>
