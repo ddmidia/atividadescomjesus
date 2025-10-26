@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Palette } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 export default function HeroSection() {
   const heroImage = PlaceHolderImages.find(img => img.id === "hero-family-coloring");
@@ -20,7 +21,7 @@ export default function HeroSection() {
             Mais de 100 atividades prontas para imprimir e viver momentos de fé, aprendizado e conexão em família.
           </p>
           <a href="#pricing">
-            <Button size="lg" className="cta-glow text-lg font-bold h-14 px-10 self-start rounded-full text-glow">
+            <Button size="lg" className={cn("cta-glow text-lg font-bold h-14 px-10 self-start rounded-full text-glow")}>
               Quero o Kit Agora <Palette className="ml-2 h-5 w-5" />
             </Button>
           </a>
@@ -71,7 +72,7 @@ export default function HeroSection() {
             </Card>
           </div>
           <a href="#pricing" className="w-full">
-            <Button size="lg" className="cta-glow text-lg font-bold h-14 px-10 w-full rounded-full text-glow">
+            <Button size="lg" className={cn("cta-glow text-lg font-bold h-14 px-10 w-full rounded-full text-glow")}>
               Quero o Kit Agora <Palette className="ml-2 h-5 w-5" />
             </Button>
           </a>
