@@ -28,8 +28,8 @@ const testimonials = [
     image: PlaceHolderImages.find(img => img.id === "testimonial-2"),
   },
   {
-    name: "Carla S.",
-    quote: "Como catequista, sempre busco formas de tornar a fé algo vivo. Esse kit é fantástico. As histórias são simples e os desenhos ajudam a fixar o aprendizado. Já indiquei para todas as mães!",
+    name: "Família Galvão",
+    quote: "Finalmente encontramos algo que une diversão e fé! Nossos filhos pedem para colorir todos os dias.",
     image: PlaceHolderImages.find(img => img.id === "testimonial-3"),
   },
 ];
