@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from 'react';
+import { cn } from '@/lib/utils';
 
 export default function CountdownTimer({ initialMinutes, initialSeconds }: { initialMinutes: number, initialSeconds: number }) {
   const [minutes, setMinutes] = useState(initialMinutes);
@@ -24,7 +25,7 @@ export default function CountdownTimer({ initialMinutes, initialSeconds }: { ini
   }, [minutes, seconds]);
 
   return (
-    <span className="font-bold tabular-nums">
+    <span className={cn("font-bold tabular-nums text-glow text-white/90")}>
       {minutes < 10 ? `0${minutes}` : minutes}:{seconds < 10 ? `0${seconds}` : seconds}
     </span>
   );
