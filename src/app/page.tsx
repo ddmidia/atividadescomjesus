@@ -10,6 +10,7 @@ import GuaranteeSection from '@/components/landing/guarantee-section';
 import FaqSection from '@/components/landing/faq-section';
 import FinalCtaSection from '@/components/landing/final-cta-section';
 import FloatingCta from '@/components/landing/floating-cta';
+import ColoringPagesSection from '@/components/landing/coloring-pages-section';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <main className="flex-1">
         <HeroSection />
         <CreatorSection />
+        <ColoringPagesSection />
         <BenefitsSection />
         <WhatYouGetSection />
         <TestimonialsSection />
