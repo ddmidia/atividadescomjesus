@@ -96,7 +96,7 @@ export default function PricingSection() {
                       <ul className="space-y-3">
                         {plan.bonuses.map((bonus, index) => (
                            <li key={index} className="flex items-center gap-3 text-sm">
-                              <Palette className="w-4 h-4 text-yellow-500 fill-yellow-400 shrink-0" />
+                              <Palette className="w-4 h-4 text-accent fill-accent/20 shrink-0" />
                               <span className="text-secondary-foreground font-semibold">{bonus.description}</span>
                            </li>
                         ))}
