@@ -45,13 +45,13 @@ export default function PricingSection() {
   return (
     <SectionWrapper id="pricing" className="bg-secondary scroll-mt-20 pt-8 pb-12">
       <div className="text-center space-y-4 mb-12 max-w-3xl mx-auto">
-        <h2 className="text-xl md:text-2xl font-headline font-bold text-headline">
+        <h2 className="text-2xl md:text-3xl font-headline font-bold text-headline">
           Escolha o plano ideal e comece a se divertir
         </h2>
         <p className="text-muted-foreground text-lg">
           Acesso vitalício • Imprima quantas vezes quiser
         </p>
-        <div className="flex items-center justify-center gap-3 text-sm text-muted-foreground bg-card/80 p-3 rounded-lg border border-primary/30 max-w-md mx-auto">
+        <div className="flex items-center justify-start gap-3 text-sm text-muted-foreground bg-card/80 p-3 rounded-lg border border-primary/30 max-w-md mx-auto">
             <Users className="w-6 h-6 text-green-500 shrink-0"/>
             <span className="font-medium text-left">Mais de 2 mil famílias já transformaram o aprendizado de fé em diversão diária.</span>
         </div>
@@ -65,14 +65,7 @@ export default function PricingSection() {
               plan.isRecommended ? 'border-accent border-2' : 'border'
             )}>
               {plan.isRecommended && (
-                <>
-                   <div className="absolute top-0 right-0 h-24 w-24 overflow-hidden z-10">
-                    <div className="absolute top-6 -right-5 w-full bg-accent text-accent-foreground text-xs font-bold text-center transform rotate-45 py-1 shine-effect">
-                        MAIS VENDIDO
-                    </div>
-                  </div>
                   <div className="card-glow" />
-                </>
               )}
               <CardHeader className="items-center text-center pt-10">
                 <CardTitle className="text-xl font-headline">{plan.name}</CardTitle>
