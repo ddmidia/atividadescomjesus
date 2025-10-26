@@ -53,11 +53,11 @@ export default function PricingSection() {
       </div>
 
       <div className="max-w-4xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {plans.map((plan) => (
             <Card key={plan.name} className={cn(
-              "shadow-lg relative flex flex-col h-full bg-card overflow-hidden",
-              plan.isRecommended ? 'border-accent border-2 lg:rounded-l-lg' : 'lg:border-l-0 lg:rounded-r-lg'
+              "shadow-lg relative flex flex-col h-full bg-card overflow-hidden rounded-lg",
+              plan.isRecommended ? 'border-accent border-2' : 'border'
             )}>
               <CardHeader className="items-center text-center pt-10">
                 <CardTitle className="text-2xl font-headline">{plan.name}</CardTitle>
