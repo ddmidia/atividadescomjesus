@@ -6,10 +6,10 @@ import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const features = [
-  "100 desenhos bíblicos para ensinar a fé enquanto eles se divertem colorindo.",
-  "30 histórias infantis que tornam o aprendizado espiritual leve e envolvente.",
-  "Bônus: Guia para mães com atividades práticas para fortalecer a fé em família.",
-  "Bônus: Calendário da Fé 2026 para criar uma rotina divertida e com propósito.",
+  { text: "<span class=\"font-bold\">100 desenhos bíblicos</span> para ensinar a fé enquanto eles se divertem colorindo." },
+  { text: "<span class=\"font-bold\">30 histórias infantis</span> que tornam o aprendizado espiritual leve e envolvente." },
+  { text: "<span class=\"font-bold\">Bônus:</span> Guia para mães com atividades práticas para fortalecer a fé em família." },
+  { text: "<span class=\"font-bold\">Bônus:</span> Calendário da Fé 2026 para criar uma rotina divertida e com propósito." },
 ];
 
 export default function WhatYouGetSection() {
@@ -17,7 +17,7 @@ export default function WhatYouGetSection() {
 
   return (
     <SectionWrapper className="bg-secondary">
-      <div className="text-center space-y-4 mb-8">
+      <div className="text-center space-y-4 mb-4">
         <h2 className="text-3xl md:text-4xl font-headline font-bold text-headline">
           Dentro do Colorindo Fé e Alegria, você recebe:
         </h2>
@@ -27,7 +27,10 @@ export default function WhatYouGetSection() {
           {features.map((feature, index) => (
             <li key={index} className="flex items-start gap-4">
               <CheckCircle2 className="w-8 h-8 text-accent mt-1 shrink-0" />
-              <span className="text-lg text-secondary-foreground">{feature}</span>
+              <span 
+                className="text-lg text-secondary-foreground"
+                dangerouslySetInnerHTML={{ __html: feature.text }}
+              />
             </li>
           ))}
         </ul>
