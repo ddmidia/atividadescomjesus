@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 const plans = [
   {
     name: "Plano Básico",
+    originalPrice: "R$67",
     price: "R$19",
     priceDescription: "Acesso vitalício",
     features: [
@@ -19,6 +20,7 @@ const plans = [
   },
   {
     name: "Plano Completo",
+    originalPrice: "R$97",
     price: "R$29",
     priceDescription: "Acesso vitalício",
     features: [
@@ -55,9 +57,12 @@ export default function PricingSection() {
           )}>
             <CardHeader className="items-center text-center pt-10">
               <CardTitle className="text-2xl font-headline">{plan.name}</CardTitle>
-              <div className="text-5xl font-bold font-headline py-4">
-                {plan.price}
-                <span className="text-lg font-normal text-muted-foreground"> / {plan.priceDescription}</span>
+              <div className="text-center">
+                <p className="text-sm text-muted-foreground">De <span className="line-through">{plan.originalPrice}</span> por</p>
+                <div className="text-5xl font-bold font-headline py-2">
+                  {plan.price}
+                  <span className="text-lg font-normal text-muted-foreground"> / {plan.priceDescription}</span>
+                </div>
               </div>
             </CardHeader>
             <CardContent className="space-y-6 flex-grow">
@@ -87,10 +92,7 @@ export default function PricingSection() {
             </CardContent>
             <CardFooter className="mt-auto p-6">
               <a href="#" className="w-full">
-                <Button size="lg" className={cn(
-                  "w-full font-bold text-lg h-14 rounded-full",
-                  plan.isRecommended ? 'cta-glow' : 'bg-primary/80 hover:bg-primary'
-                )}>
+                <Button size="lg" className="w-full font-bold text-lg h-14 rounded-full btn-glow">
                   {plan.cta}
                   <Palette className="ml-2 w-5 h-5" />
                 </Button>
