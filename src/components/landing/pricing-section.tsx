@@ -86,7 +86,7 @@ export default function PricingSection() {
                       <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center shrink-0">
                         <Check className="w-3.5 h-3.5 text-white" />
                       </div>
-                      <span className="text-secondary-foreground">{feature}</span>
+                      <span className="text-secondary-foreground font-semibold">{feature}</span>
                     </li>
                   ))}
                 </ul>
