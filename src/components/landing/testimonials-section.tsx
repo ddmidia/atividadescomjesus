@@ -31,7 +31,7 @@ const testimonials = [
     image: PlaceHolderImages.find(img => img.id === "testimonial-2"),
   },
   {
-    name: "Família Galvão",
+    name: "Família Oliveira",
     role: "Pais de 3 crianças",
     quote: "Finalmente encontramos algo que une diversão e fé! Nossos filhos pedem para colorir todos os dias.",
     image: PlaceHolderImages.find(img => img.id === "testimonial-3"),
