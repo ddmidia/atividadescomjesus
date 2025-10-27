@@ -20,7 +20,7 @@ const plans = [
     ],
     isRecommended: false,
     cta: "COMPRAR PLANO BÁSICO",
-    url: "https://app.ombrelone.com/checkout/digital/2sfcjj7u0v"
+    url: "#"
   },
   {
     name: "Plano Completo",
@@ -39,7 +39,7 @@ const plans = [
     ],
     isRecommended: true,
     cta: "COMPRAR PLANO COMPLETO",
-    url: "https://app.ombrelone.com/checkout/digital/3y799g6jpv"
+    url: "#"
   },
 ];
 

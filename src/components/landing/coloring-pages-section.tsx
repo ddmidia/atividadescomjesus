@@ -42,15 +42,9 @@ export default function ColoringPagesSection() {
     setCount(api.scrollSnapList().length);
     setCurrent(api.selectedScrollSnap() + 1);
 
-    const onSelect = () => {
+    api.on("select", () => {
       setCurrent(api.selectedScrollSnap() + 1);
-    };
-
-    api.on("select", onSelect);
-    
-    return () => {
-      api.off("select", onSelect);
-    };
+    });
   }, [api]);
 
 
