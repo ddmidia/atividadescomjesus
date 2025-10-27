@@ -25,7 +25,7 @@ export default function Home() {
         <BenefitsSection />
         <SectionWrapper className="pt-0 pb-0 text-center">
             <a href="#pricing">
-                <Button size="lg" className={cn("cta-glow text-lg font-bold h-16 px-12 rounded-full")}>
+                <Button size="lg" className={cn("cta-glow text-lg font-bold h-14 px-10 rounded-full")}>
                     <span className="text-glow text-white/90">ACESSAR CONTEÚDO ✝️</span> 
                 </Button>
             </a>
