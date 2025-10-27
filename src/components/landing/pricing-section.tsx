@@ -112,13 +112,11 @@ export default function PricingSection() {
                 <a href={plan.url} className="w-full">
                   {plan.isRecommended ? (
                     <Button size="lg" className={cn("w-full font-bold text-lg h-14 rounded-full cta-glow")}>
-                      <span className="text-glow">COMPRAR PLANO COMPLETO</span>
-                      <span className="text-black">🔓</span>
+                      COMPRAR PLANO COMPLETO 🔓
                     </Button>
                   ) : (
                     <Button variant="outline" size="lg" className={cn("w-full font-bold text-lg h-14 rounded-full border-accent text-accent hover:bg-accent/10 hover:text-accent")}>
-                      {plan.cta}
-                      <span className="text-accent">🔓</span>
+                      {plan.cta} 🔓
                     </Button>
                   )}
                 </a>
