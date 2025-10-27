@@ -3,7 +3,7 @@
     {
       "id": "hero-family-coloring",
       "description": "Uma mãe se diverte colorindo desenhos com seus dois filhos na sala de casa.",
-      "imageUrl": "https://images.unsplash.com/photo-1543851502-7bae69386345?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxmYW1pbHklMjBjb2xvcmluZ3xlbnwwfHx8fDE3NjE1NjYyMTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.imgur.com/3c8iLKY.png",
       "imageHint": "family coloring"
     },
     {
@@ -15,7 +15,7 @@
     {
       "id": "creator-monica",
       "description": "A circular portrait of Mônica Alencar, the creator of the product.",
-      "imageUrl": "https://images.unsplash.com/photo-1580489944761-15a19d654956?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2MTU2NjI4NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.imgur.com/plTwUd8.jpeg",
       "imageHint": "woman portrait"
     },
     {
@@ -45,31 +45,31 @@
     {
       "id": "coloring-page-1",
       "description": "Coloring page of Jesus with children.",
-      "imageUrl": "https://images.unsplash.com/photo-1620955972740-d7904797081e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYXJ0b29uJTIwY29sb3JpbmclMjBwYWdlJTIwamVzdXN8ZW58MHx8fHwxNzYxNTY2NDMyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.imgur.com/uR2Xk5J.png",
       "imageHint": "Jesus children coloring"
     },
     {
       "id": "coloring-page-2",
       "description": "Coloring page of Noah's Ark.",
-      "imageUrl": "https://images.unsplash.com/photo-1604537529428-15bc515975e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxub2FoJTIwYXJrJTIwY29sb3Jpbmd8ZW58MHx8fHwxNzYxNTY2NDcyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.imgur.com/kS9T0sF.png",
       "imageHint": "noah ark coloring"
     },
     {
       "id": "coloring-page-3",
       "description": "Coloring page of Daniel in the lion's den.",
-      "imageUrl": "https://images.unsplash.com/photo-1581895991220-7a01a9071c50?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYXJ0b29uJTIwY29sb3JpbmclMjBwYWdlJTIwbGlvbnxlbnwwfHx8fDE3NjE1NjY1MDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.imgur.com/GZ21bXk.png",
       "imageHint": "daniel lion coloring"
     },
     {
       "id": "coloring-page-4",
       "description": "Coloring page of David and Goliath.",
-      "imageUrl": "https://images.unsplash.com/photo-1615822365853-488b398863f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYXJ0b29uJTIwY29sb3JpbmclMjBwYWdlJTIwZ2lnaW5hdGV8ZW58MHx8fHwxNzYxNTY2NTMyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.imgur.com/s8D3Y7T.png",
       "imageHint": "david goliath coloring"
     },
     {
       "id": "coloring-page-5",
       "description": "Coloring page of the Nativity scene.",
-      "imageUrl": "https://images.unsplash.com/photo-1577934442186-01589d8f3484?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxuYXRpdml0eSUyMHNjZW5lJTIwY29sb3Jpbmd8ZW58MHx8fHwxNzYxNTY2NTYwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.imgur.com/lMIGd3F.png",
       "imageHint": "nativity scene coloring"
     }
   ]
