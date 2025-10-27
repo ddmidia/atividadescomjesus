@@ -111,7 +111,7 @@ body {
   }
   
   .cta-glow {
-    @apply relative overflow-hidden rounded-full border-brand-green/30 bg-gradient-to-b from-brand-green to-brand-green text-black transition-all duration-300;
+    @apply relative overflow-hidden rounded-full border-brand-green/30 bg-gradient-to-b from-brand-green to-brand-green text-accent transition-all duration-300;
     animation: slow-pulse 2s infinite;
   }
 
