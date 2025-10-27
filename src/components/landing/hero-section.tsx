@@ -25,8 +25,7 @@ export default function HeroSection() {
           </div>
           <a href="#pricing">
             <Button size="lg" className={cn("cta-glow text-lg font-bold h-14 px-10 self-start rounded-full")}>
-              <span className="text-glow text-white/90">Quero ensinar com fé</span> 
-              <svg xmlns="http://www.w3.org/2000/svg" className="ml-2 h-5 w-5 text-glow text-white/90" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15v-4H8v-2h3V7l4 4-4 4z"/></svg>
+              <span className="text-glow text-white/90">ACESSAR CONTEÚDO ✝️</span> 
             </Button>
           </a>
         </div>
@@ -80,8 +79,7 @@ export default function HeroSection() {
            <div className="w-full px-4 md:hidden mt-6">
             <a href="#pricing" className="w-full">
                 <Button size="lg" className={cn("cta-glow text-lg font-bold h-14 px-10 w-full rounded-full")}>
-                <span className="text-glow text-white/90">Quero ensinar com fé</span>
-                <svg xmlns="http://www.w3.org/2000/svg" className="ml-2 h-5 w-5 text-glow text-white/90" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15v-4H8v-2h3V7l4 4-4 4z"/></svg>
+                <span className="text-glow text-white/90">ACESSAR CONTEÚDO ✝️</span>
                 </Button>
             </a>
         </div>

@@ -9,8 +9,10 @@ import PricingSection from '@/components/landing/pricing-section';
 import GuaranteeSection from '@/components/landing/guarantee-section';
 import FaqSection from '@/components/landing/faq-section';
 import FinalCtaSection from '@/components/landing/final-cta-section';
-import FloatingCta from '@/components/landing/floating-cta';
 import ColoringPagesSection from '@/components/landing/coloring-pages-section';
+import { Button } from '@/components/ui/button';
+import { cn } from '@/lib/utils';
+import { SectionWrapper } from '@/components/landing/section-wrapper';
 
 export default function Home() {
   return (
@@ -21,6 +23,13 @@ export default function Home() {
         <CreatorSection />
         <ColoringPagesSection />
         <BenefitsSection />
+        <SectionWrapper className="pt-0 pb-0 text-center">
+            <a href="#pricing">
+                <Button size="lg" className={cn("cta-glow text-lg font-bold h-16 px-12 rounded-full")}>
+                    <span className="text-glow text-white/90">ACESSAR CONTEÚDO ✝️</span> 
+                </Button>
+            </a>
+        </SectionWrapper>
         <WhatYouGetSection />
         <TestimonialsSection />
         <PricingSection />
@@ -29,7 +38,6 @@ export default function Home() {
         <FinalCtaSection />
       </main>
       <Footer />
-      <FloatingCta />
     </div>
   );
 }
