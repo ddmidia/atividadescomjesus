@@ -20,6 +20,7 @@ const plans = [
     ],
     isRecommended: false,
     cta: "COMPRAR PLANO BÁSICO",
+    url: "https://app.ombrelone.com/checkout/digital/2sfcjj7u0v"
   },
   {
     name: "Plano Completo",
@@ -38,6 +39,7 @@ const plans = [
     ],
     isRecommended: true,
     cta: "COMPRAR PLANO COMPLETO",
+    url: "https://app.ombrelone.com/checkout/digital/3y799g6jpv"
   },
 ];
 
@@ -64,9 +66,6 @@ export default function PricingSection() {
               "shadow-lg relative flex flex-col h-full bg-card overflow-hidden rounded-lg",
               plan.isRecommended ? 'border-accent border-2' : 'border'
             )}>
-              {plan.isRecommended && (
-                <div className="card-glow" />
-              )}
               <CardHeader className="items-center text-center pt-8">
                  {plan.isRecommended && (
                   <div className="bg-accent text-accent-foreground text-xs font-bold px-3 py-1 rounded-full shadow-lg mb-4">
@@ -110,7 +109,7 @@ export default function PricingSection() {
                 )}
               </CardContent>
               <CardFooter className="mt-auto p-6">
-                <a href="#pricing" className="w-full">
+                <a href={plan.url} className="w-full">
                   {plan.isRecommended ? (
                     <Button size="lg" className={cn("w-full font-bold text-lg h-14 rounded-full cta-glow")}>
                       <span className="text-glow text-accent-foreground">COMPRAR PLANO COMPLETO</span>
