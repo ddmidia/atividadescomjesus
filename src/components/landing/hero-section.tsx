@@ -20,7 +20,7 @@ export default function HeroSection() {
               Seus filhos passam tempo demais nas telas?
             </h1>
             <h2 className="text-xl md:text-2xl text-muted-foreground">
-              Descubra o jeito mais leve e divertido de ensiná-los sobre Jesus — direto do seu lar!
+              Descubra o jeito mais leve de ensinar sobre Jesus com 100 desenhos e 30 histórias prontas para imprimir.
             </h2>
           </div>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto md:mx-0">
@@ -60,7 +60,7 @@ export default function HeroSection() {
               Seus filhos passam tempo demais nas telas?
             </h1>
             <h2 className="text-xl text-muted-foreground">
-              Descubra o jeito mais leve e divertido de ensiná-los sobre Jesus — direto do seu lar!
+              Descubra o jeito mais leve de ensinar sobre Jesus com 100 desenhos e 30 histórias prontas para imprimir.
             </h2>
           </div>
           <p className="text-lg text-muted-foreground max-w-2xl">
