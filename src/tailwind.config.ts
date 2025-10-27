@@ -22,6 +22,7 @@ export default {
         code: ['monospace'],
       },
       colors: {
+        'brand-green': '#284703',
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         footer: 'hsl(224, 33%, 17%)',
