@@ -23,9 +23,6 @@ export default function HeroSection() {
               Descubra como transformar essa distração em devoção com <strong className="text-foreground">100 desenhos e 30 histórias para colorir que ensinam sobre Jesus</strong> — é só imprimir e se divertir!
             </h2>
           </div>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto md:mx-0">
-            <strong className="text-foreground">Leve Mais de 100 Atividades e Histórias prontas para imprimir e ensinar valores cristãos de forma leve e divertida.</strong>
-          </p>
           <a href="#pricing">
             <Button size="lg" className={cn("cta-glow text-lg font-bold h-14 px-10 self-start rounded-full")}>
               <span className="text-glow text-white/90">Quero ensinar com fé</span> 
@@ -63,9 +60,6 @@ export default function HeroSection() {
               Descubra como transformar essa distração em devoção com <strong className="text-foreground">100 desenhos e 30 histórias para colorir que ensinam sobre Jesus</strong> — é só imprimir e se divertir!
             </h2>
           </div>
-          <p className="text-lg text-muted-foreground max-w-2xl">
-            <strong className="text-foreground">Leve Mais de 100 Atividades e Histórias prontas para imprimir e ensinar valores cristãos de forma leve e divertida.</strong>
-          </p>
           <div className="w-full max-w-lg">
             <Card className="overflow-hidden shadow-none rounded-2xl bg-transparent border-none">
               <CardContent className="p-0">
