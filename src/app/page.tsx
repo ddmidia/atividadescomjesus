@@ -11,10 +11,6 @@ import GuaranteeSection from '@/components/landing/guarantee-section';
 import FaqSection from '@/components/landing/faq-section';
 import FinalCtaSection from '@/components/landing/final-cta-section';
 import ColoringPagesSection from '@/components/landing/coloring-pages-section';
-import { Button } from '@/components/ui/button';
-import { cn } from '@/lib/utils';
-import { SectionWrapper } from '@/components/landing/section-wrapper';
-import { Palette } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -25,14 +21,6 @@ export default function Home() {
         <CreatorSection />
         <ColoringPagesSection />
         <BenefitsSection />
-        <SectionWrapper className="pt-0 pb-0 text-center">
-            <a href="#pricing">
-                <Button size="lg" className={cn("cta-glow text-lg font-bold h-14 px-10 rounded-full self-center")}>
-                    <span className="text-glow text-white/90">ACESSAR CONTEÚDO</span> 
-                    <Palette className="w-6 h-6 text-glow text-white/90" strokeWidth={3} />
-                </Button>
-            </a>
-        </SectionWrapper>
         <WhatYouGetSection />
         <TestimonialsSection />
         <PricingSection />
