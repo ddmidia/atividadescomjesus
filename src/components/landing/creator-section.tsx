@@ -10,9 +10,9 @@ export default function CreatorSection() {
   const creatorImage = PlaceHolderImages.find(img => img.id === "creator-monica");
 
   return (
-    <SectionWrapper className="bg-primary/5 pt-0 pb-8">
+    <SectionWrapper className="bg-primary/5 pt-12 pb-8">
        <div className="max-w-4xl mx-auto flex flex-col items-center gap-6 md:gap-0">
-         <Card className="w-full shadow-xl bg-secondary md:-mt-12 mt-2">
+         <Card className="w-full shadow-xl bg-secondary md:-mt-24 mt-2">
           <CardContent className="p-8 md:p-12 grid md:grid-cols-3 gap-8 items-center">
             <div className="md:col-span-1 flex justify-center">
               {creatorImage && (

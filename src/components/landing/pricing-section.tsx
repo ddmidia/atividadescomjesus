@@ -54,7 +54,7 @@ export default function PricingSection() {
           Acesso vitalício • Imprima quantas vezes quiser
         </p>
         <div className="flex items-center justify-start gap-3 text-sm text-muted-foreground bg-card/80 p-3 rounded-lg border border-primary/30 max-w-md mx-auto">
-            <Users className="w-6 h-6 text-brand-green shrink-0"/>
+            <Users className="w-6 h-6 text-accent shrink-0"/>
             <span className="font-medium text-left">Mais de 2 mil famílias já transformaram o aprendizado de fé em diversão diária.</span>
         </div>
       </div>
@@ -85,7 +85,7 @@ export default function PricingSection() {
                 <ul className="space-y-3">
                   {plan.features.map((feature, index) => (
                     <li key={index} className="flex items-center gap-3">
-                      <div className="w-5 h-5 rounded-full flex items-center justify-center shrink-0 bg-brand-green">
+                      <div className="w-5 h-5 rounded-full flex items-center justify-center shrink-0 bg-accent">
                         <Check className="w-3.5 h-3.5 text-white" />
                       </div>
                       <span className="text-secondary-foreground font-semibold">{feature}</span>
@@ -98,7 +98,7 @@ export default function PricingSection() {
                       <ul className="space-y-3">
                         {plan.bonuses.map((bonus, index) => (
                            <li key={index} className="flex items-center gap-3 text-sm">
-                              <div className="w-5 h-5 rounded-full flex items-center justify-center shrink-0 bg-accent">
+                              <div className="w-5 h-5 rounded-full flex items-center justify-center shrink-0 bg-brand-green">
                                 <span className='text-xs text-white font-bold'>+</span>
                               </div>
                               <span className="text-secondary-foreground font-semibold">{bonus.description}</span>
