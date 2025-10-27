@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { cn } from "@/lib/utils";
-import { HeartHandshake } from "lucide-react";
+import { HeartHandshake, Palette } from "lucide-react";
 
 export default function HeroSection() {
   const heroImage = PlaceHolderImages.find(img => img.id === "hero-family-coloring");
@@ -25,7 +25,8 @@ export default function HeroSection() {
           </div>
           <a href="#pricing">
             <Button size="lg" className={cn("cta-glow text-lg font-bold h-14 px-10 self-start rounded-full")}>
-              <span className="text-glow text-white/90">ACESSAR CONTEÚDO 🎨</span> 
+              <span className="text-glow text-white/90">ACESSAR CONTEÚDO</span> 
+              <Palette className="w-5 h-5 text-glow text-white/90" />
             </Button>
           </a>
         </div>
@@ -79,7 +80,8 @@ export default function HeroSection() {
            <div className="w-full px-4 md:hidden mt-6">
             <a href="#pricing" className="w-full">
                 <Button size="lg" className={cn("cta-glow text-lg font-bold h-14 px-10 w-full rounded-full")}>
-                <span className="text-glow text-white/90">ACESSAR CONTEÚDO 🎨</span>
+                  <span className="text-glow text-white/90">ACESSAR CONTEÚDO</span>
+                  <Palette className="w-5 h-5 text-glow text-white/90" />
                 </Button>
             </a>
         </div>

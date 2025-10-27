@@ -1,6 +1,7 @@
 import { SectionWrapper } from "./section-wrapper";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { Palette } from "lucide-react";
 
 export default function FinalCtaSection() {
   return (
@@ -14,7 +15,8 @@ export default function FinalCtaSection() {
         </p>
         <a href="#pricing">
           <Button size="lg" className={cn("cta-glow text-lg font-bold h-16 px-12 mt-4 rounded-full")}>
-            <span className="text-glow text-white/90">ACESSAR CONTEÚDO 🎨</span> 
+            <span className="text-glow text-white/90">ACESSAR CONTEÚDO</span> 
+            <Palette className="w-5 h-5 text-glow text-white/90" />
           </Button>
         </a>
       </div>
