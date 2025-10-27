@@ -68,7 +68,7 @@ export default function PricingSection() {
             )}>
               <CardHeader className="items-center text-center pt-8">
                  {plan.isRecommended && (
-                  <div className="bg-accent text-accent-foreground text-xs font-bold px-3 py-1 rounded-full shadow-lg mb-4">
+                  <div className="bg-brand-green text-accent text-xs font-bold px-3 py-1 rounded-full shadow-lg mb-4">
                     MAIS VENDIDO
                   </div>
                 )}
