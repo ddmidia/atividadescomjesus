@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 
+// This component is not currently used, but kept for potential future use.
 export default function CountdownTimer({ initialMinutes, initialSeconds }: { initialMinutes: number, initialSeconds: number }) {
   const [minutes, setMinutes] = useState(initialMinutes);
   const [seconds, setSeconds] = useState(initialSeconds);
