@@ -19,15 +19,15 @@ import Autoplay from "embla-carousel-autoplay";
 
 const testimonials = [
   {
-    name: "Ana P.",
-    role: "Mãe e Catequista",
-    quote: "Eu não sou muito criativa, mas com esse material, consigo preparar atividades incríveis em minutos! Meus filhos amam, e eu me sinto uma supermãe.",
+    name: "Camila S.",
+    role: "mãe da Maria, 6 anos",
+    quote: "Minha filha pede pra colorir todo dia — e sempre pergunta sobre Jesus!",
     image: PlaceHolderImages.find(img => img.id === "testimonial-1"),
   },
   {
-    name: "Juliana M.",
-    role: "Professora de Educação Infantil",
-    quote: "Meu filho de 5 anos não largava o tablet. Agora, ele mesmo pede para 'fazer Jesus' e fica super concentrado colorindo e ouvindo as histórias. É uma bênção!",
+    name: "Paula F.",
+    role: "Professora de Catequese",
+    quote: "Uso com meus alunos na catequese. Eles amam!",
     image: PlaceHolderImages.find(img => img.id === "testimonial-2"),
   },
   {

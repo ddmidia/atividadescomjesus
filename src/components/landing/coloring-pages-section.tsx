@@ -51,12 +51,9 @@ export default function ColoringPagesSection() {
   return (
     <SectionWrapper className="pt-8 pb-0">
       <div className="text-center space-y-4 mb-8">
-        <h2 className="text-2xl md:text-3xl font-headline font-bold text-headline">
-          Desenhos inspiradores no estilo Bobbie Goods
+        <h2 className="text-2xl md:text-3xl font-headline font-bold text-headline max-w-2xl mx-auto">
+          Desenhos com traços delicados e expressões de fé — criados para ensinar valores de forma divertida.
         </h2>
-        <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-          Desenhos bíblicos com traços delicados que ensinam enquanto divertem.
-        </p>
       </div>
 
       <Carousel
@@ -105,7 +102,7 @@ export default function ColoringPagesSection() {
             ))}
         </div>
          <p className="text-center text-muted-foreground text-sm">
-          Arraste para o lado
+          Cada página foi pensada para unir criatividade, fé e aprendizado — longe das telas.
         </p>
       </div>
     </SectionWrapper>

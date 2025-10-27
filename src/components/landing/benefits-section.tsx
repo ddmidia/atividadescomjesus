@@ -1,28 +1,27 @@
 
 import { SectionWrapper } from "./section-wrapper";
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { Bird, Pencil, Users, BookOpen } from "lucide-react";
 
 const benefits = [
   {
-    icon: <Bird className="w-8 h-8 text-accent" />,
-    title: "Fortalece a fé",
-    description: "Fortalece a fé das crianças de forma divertida e prática.",
+    icon: "💛",
+    title: "Fortalece a fé e o coração dos pequenos",
+    description: "Ensina valores cristãos de um jeito que eles amam.",
   },
   {
-    icon: <Pencil className="w-8 h-8 text-accent" />,
-    title: "Desenvolve habilidades",
-    description: "Desenvolve coordenação, concentração e valores cristãos.",
+    icon: "🎨",
+    title: "Desperta criatividade e coordenação de forma natural",
+    description: "Atividades que desenvolvem habilidades enquanto divertem.",
   },
   {
-    icon: <Users className="w-8 h-8 text-accent" />,
-    title: "Conexão familiar",
-    description: "Momentos de conexão real entre pais e filhos.",
+    icon: "🙏",
+    title: "Cria laços reais entre pais e filhos",
+    description: "Momentos de qualidade que fortalecem a família.",
   },
   {
-    icon: <BookOpen className="w-8 h-8 text-accent" />,
-    title: "Histórias inspiradoras",
-    description: "Desenhos e histórias inspiradoras sobre Jesus e os santos.",
+    icon: "📖",
+    title: "Histórias que ensinam, emocionam e aproximam de Deus",
+    description: "Conteúdos que tocam o coração e ensinam a Palavra.",
   },
 ];
 
@@ -39,7 +38,7 @@ export default function BenefitsSection() {
           <Card key={index} className="text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
             <CardHeader className="items-center p-4">
               <div className="bg-card border-2 border-accent p-3 rounded-full mb-3 aspect-square flex items-center justify-center">
-                {benefit.icon}
+                <span className="text-2xl">{benefit.icon}</span>
               </div>
               <CardTitle className="font-headline text-lg">{benefit.title}</CardTitle>
               <CardDescription className="pt-1 text-sm">{benefit.description}</CardDescription>

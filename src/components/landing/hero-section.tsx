@@ -3,8 +3,8 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { Palette } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { HeartHandshake } from "lucide-react";
 
 export default function HeroSection() {
   const heroImage = PlaceHolderImages.find(img => img.id === "hero-family-coloring");
@@ -15,15 +15,17 @@ export default function HeroSection() {
         
         {/* Text content for larger screens */}
         <div className="hidden md:flex flex-col space-y-6 text-center md:text-left">
-          <h1 className="text-3xl md:text-4xl font-headline font-bold tracking-tighter text-headline">
-            Transforme o tempo de tela em momentos de fé e aprendizado com Deus!
+          <h1 className="text-3xl md:text-4xl font-headline font-bold tracking-tight text-headline">
+            Seus filhos passam tempo demais nas telas?
+            Descubra o jeito mais leve e divertido de ensiná-los sobre Jesus — direto do seu lar!
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto md:mx-0">
             <strong className="text-foreground">Leve Mais de 100 Atividades e Histórias prontas para imprimir e ensinar valores cristãos de forma leve e divertida.</strong>
           </p>
           <a href="#pricing">
             <Button size="lg" className={cn("cta-glow text-lg font-bold h-14 px-10 self-start rounded-full")}>
-              <span className="text-glow text-white/90">BAIXAR KIT DE ATIVIDADES</span> <Palette className="ml-2 h-5 w-5 text-glow text-white/90" />
+              <span className="text-glow text-white/90">Quero ensinar com fé</span> 
+              <svg xmlns="http://www.w3.org/2000/svg" className="ml-2 h-5 w-5 text-glow text-white/90" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15v-4H8v-2h3V7l4 4-4 4z"/></svg>
             </Button>
           </a>
         </div>
@@ -49,8 +51,9 @@ export default function HeroSection() {
 
         {/* Mobile layout: Headline, Subheadline, Image, Button */}
         <div className="md:hidden flex flex-col items-center text-center space-y-6">
-          <h1 className="text-3xl font-headline font-bold tracking-tighter text-headline">
-            Transforme o tempo de tela em momentos de fé e aprendizado com Deus!
+          <h1 className="text-3xl font-headline font-bold tracking-tight text-headline">
+            Seus filhos passam tempo demais nas telas?
+            Descubra o jeito mais leve e divertido de ensiná-los sobre Jesus — direto do seu lar!
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl">
             <strong className="text-foreground">Leve Mais de 100 Atividades e Histórias prontas para imprimir e ensinar valores cristãos de forma leve e divertida.</strong>
@@ -75,7 +78,8 @@ export default function HeroSection() {
            <div className="w-full px-4 md:hidden mt-6">
             <a href="#pricing" className="w-full">
                 <Button size="lg" className={cn("cta-glow text-lg font-bold h-14 px-10 w-full rounded-full")}>
-                <span className="text-glow text-white/90">BAIXAR KIT DE ATIVIDADES</span> <Palette className="ml-2 h-5 w-5 text-glow text-white/90" />
+                <span className="text-glow text-white/90">Quero ensinar com fé</span>
+                <svg xmlns="http://www.w3.org/2000/svg" className="ml-2 h-5 w-5 text-glow text-white/90" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15v-4H8v-2h3V7l4 4-4 4z"/></svg>
                 </Button>
             </a>
         </div>
