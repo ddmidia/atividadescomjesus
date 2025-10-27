@@ -23,7 +23,7 @@ export default function HeroSection() {
             </h2>
           </div>
           <a href="#pricing">
-            <Button size="lg" className={cn("cta-glow text-lg font-bold h-14 px-10 self-start rounded-full")}>
+            <Button size="lg" className={cn("cta-glow text-lg font-bold h-14 px-10 self-start rounded-full shine-effect")}>
               ACESSAR CONTEÚDO AGORA
             </Button>
           </a>
@@ -77,7 +77,7 @@ export default function HeroSection() {
           </div>
            <div className="w-full px-4 md:hidden mt-6">
             <a href="#pricing" className="w-full">
-                <Button size="lg" className={cn("cta-glow text-lg font-bold h-14 px-10 w-full rounded-full")}>
+                <Button size="lg" className={cn("cta-glow text-lg font-bold h-14 px-10 w-full rounded-full shine-effect")}>
                   ACESSAR CONTEÚDO AGORA
                 </Button>
             </a>
