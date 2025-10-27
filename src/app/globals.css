@@ -91,6 +91,7 @@ body {
 @layer utilities {
   .cta-glow-accent {
     @apply relative overflow-hidden rounded-full border border-accent/30 bg-gradient-to-b from-accent/70 to-accent text-white transition-all duration-300;
+    animation: slow-pulse 2s infinite;
   }
 
   .cta-glow-accent::after {
@@ -102,6 +103,7 @@ body {
   
   .cta-glow-accent:hover {
     @apply from-accent/80 to-accent/90;
+    animation: none;
   }
   
   .cta-glow-accent:hover::after {
@@ -110,6 +112,7 @@ body {
   
   .cta-glow {
     @apply relative overflow-hidden rounded-full border-green-600/30 bg-gradient-to-b from-green-500 to-green-600 text-white transition-all duration-300;
+    animation: slow-pulse 2s infinite;
   }
 
   .cta-glow::after {
@@ -121,6 +124,7 @@ body {
   
   .cta-glow:hover {
     @apply from-green-500/90 to-green-600/90;
+    animation: none;
   }
   
   .cta-glow:hover::after {
@@ -159,6 +163,15 @@ body {
     }
     100% {
       transform: translateX(100%);
+    }
+  }
+
+  @keyframes slow-pulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.03);
     }
   }
 }
