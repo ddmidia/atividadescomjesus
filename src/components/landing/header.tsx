@@ -1,6 +1,13 @@
+"use client";
+
 import { Zap } from "lucide-react";
-import CountdownTimer from "./countdown-timer";
+import dynamic from 'next/dynamic';
 import { cn } from "@/lib/utils";
+
+const CountdownTimer = dynamic(() => import("./countdown-timer"), {
+  ssr: false,
+  loading: () => <span className={cn("font-bold tabular-nums text-glow text-white/90")}>20:00</span>
+});
 
 export default function Header() {
   return (
