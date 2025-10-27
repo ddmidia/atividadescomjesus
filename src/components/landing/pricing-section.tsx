@@ -128,7 +128,7 @@ export default function PricingSection() {
       </div>
 
        <p className="text-center text-sm text-muted-foreground mt-8">
-        Compra 100% segura • PDF entregue por e-mail instantaneamente
+        Compra 100% segura • Material Digital entregue por e-mail instantaneamente
       </p>
     </SectionWrapper>
   );
