@@ -15,10 +15,14 @@ export default function HeroSection() {
         
         {/* Text content for larger screens */}
         <div className="hidden md:flex flex-col space-y-6 text-center md:text-left">
-          <h1 className="text-3xl md:text-4xl font-headline font-bold tracking-tight text-headline">
-            Seus filhos passam tempo demais nas telas?
-            Descubra o jeito mais leve e divertido de ensiná-los sobre Jesus — direto do seu lar!
-          </h1>
+          <div className="space-y-4">
+            <h1 className="text-3xl md:text-4xl font-headline font-bold tracking-tight text-headline">
+              Seus filhos passam tempo demais nas telas?
+            </h1>
+            <h2 className="text-xl md:text-2xl text-muted-foreground">
+              Descubra o jeito mais leve e divertido de ensiná-los sobre Jesus — direto do seu lar!
+            </h2>
+          </div>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto md:mx-0">
             <strong className="text-foreground">Leve Mais de 100 Atividades e Histórias prontas para imprimir e ensinar valores cristãos de forma leve e divertida.</strong>
           </p>
@@ -51,10 +55,14 @@ export default function HeroSection() {
 
         {/* Mobile layout: Headline, Subheadline, Image, Button */}
         <div className="md:hidden flex flex-col items-center text-center space-y-6">
-          <h1 className="text-3xl font-headline font-bold tracking-tight text-headline">
-            Seus filhos passam tempo demais nas telas?
-            Descubra o jeito mais leve e divertido de ensiná-los sobre Jesus — direto do seu lar!
-          </h1>
+          <div className="space-y-4">
+            <h1 className="text-3xl font-headline font-bold tracking-tight text-headline">
+              Seus filhos passam tempo demais nas telas?
+            </h1>
+            <h2 className="text-xl text-muted-foreground">
+              Descubra o jeito mais leve e divertido de ensiná-los sobre Jesus — direto do seu lar!
+            </h2>
+          </div>
           <p className="text-lg text-muted-foreground max-w-2xl">
             <strong className="text-foreground">Leve Mais de 100 Atividades e Histórias prontas para imprimir e ensinar valores cristãos de forma leve e divertida.</strong>
           </p>
