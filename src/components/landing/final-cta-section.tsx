@@ -15,8 +15,8 @@ export default function FinalCtaSection() {
         </p>
         <a href="#pricing">
           <Button size="lg" className={cn("cta-glow text-lg font-bold h-16 px-12 mt-4 rounded-full")}>
-            <span className="text-glow text-white/90">QUERO ENSINAR COM FÉ</span> 
-            <span className="text-white/90">✨</span>
+            <span className="text-glow">QUERO ENSINAR COM FÉ</span> 
+            <span className="text-black">✨</span>
           </Button>
         </a>
       </div>

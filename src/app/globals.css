@@ -111,14 +111,14 @@ body {
   }
   
   .cta-glow {
-    @apply relative overflow-hidden rounded-full border-brand-green/30 bg-gradient-to-b from-brand-green to-brand-green text-white transition-all duration-300;
+    @apply relative overflow-hidden rounded-full border-brand-green/30 bg-gradient-to-b from-brand-green to-brand-green text-black transition-all duration-300;
     animation: slow-pulse 2s infinite;
   }
 
   .cta-glow::after {
     content: '';
     @apply absolute inset-0 -z-10;
-    box-shadow: 0 0 25px 0px #E60554;
+    box-shadow: 0 0 25px 0px #DEFD01;
     transition: all 0.3s;
   }
   
@@ -128,7 +128,7 @@ body {
   }
   
   .cta-glow:hover::after {
-     box-shadow: 0 0 35px 2px #E60554;
+     box-shadow: 0 0 35px 2px #DEFD01;
   }
 
   .text-glow {
