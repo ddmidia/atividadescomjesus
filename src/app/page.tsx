@@ -28,7 +28,7 @@ export default function Home() {
             <a href="#pricing">
                 <Button size="lg" className={cn("cta-glow text-lg font-bold h-14 px-10 rounded-full")}>
                     <span className="text-glow text-white/90">ACESSAR CONTEÚDO</span> 
-                    <Palette className="w-5 h-5 text-glow text-white/90" />
+                    <Palette className="w-6 h-6 text-glow text-white/90" />
                 </Button>
             </a>
         </SectionWrapper>
