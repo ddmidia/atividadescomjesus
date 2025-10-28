@@ -104,6 +104,9 @@ export default function ColoringPagesSection() {
                 />
             ))}
         </div>
+        <p className="text-center text-muted-foreground text-sm">
+          Arraste para o lado
+        </p>
       </div>
     </SectionWrapper>
   );
