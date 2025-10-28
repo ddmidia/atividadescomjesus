@@ -10,7 +10,7 @@ export default function HeroSection() {
 
   return (
     <section className="pt-8 pb-4 sm:pt-12 sm:pb-4 bg-secondary">
-      <div className="container mx-auto px-4 md:px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div className="container mx-auto px-4 md:px-6 flex flex-col md:grid md:grid-cols-2 md:gap-12 items-center">
         
         {/* Text content for larger screens */}
         <div className="hidden md:flex flex-col space-y-6 text-center md:text-left">
@@ -58,7 +58,7 @@ export default function HeroSection() {
               Descubra como transformar essa distração em devoção com <strong className="text-foreground">100 desenhos e 30 histórias para colorir que ensinam sobre Jesus</strong> — é só imprimir e se divertir!
             </h2>
           </div>
-          <div className="w-full max-w-lg">
+          <div className="w-full max-w-lg mt-6">
             <Card className="overflow-hidden shadow-none rounded-2xl bg-transparent border-none">
               <CardContent className="p-0">
                 {heroImage && (
