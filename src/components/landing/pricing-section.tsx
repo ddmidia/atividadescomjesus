@@ -4,7 +4,7 @@
 import { SectionWrapper } from "./section-wrapper";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Check, Users } from "lucide-react";
+import { Check, Users, Gift } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const plans = [
@@ -98,8 +98,8 @@ export default function PricingSection() {
                       <ul className="space-y-3">
                         {plan.bonuses.map((bonus, index) => (
                            <li key={index} className="flex items-center gap-3 text-sm">
-                              <div className="w-5 h-5 rounded-full flex items-center justify-center shrink-0 bg-brand-green">
-                                <span className='text-xs text-white font-bold'>+</span>
+                              <div className="w-5 h-5 rounded-full flex items-center justify-center shrink-0 bg-brand-green text-accent p-0.5">
+                                <Gift className="w-full h-full"/>
                               </div>
                               <span className="text-secondary-foreground font-semibold">{bonus.description}</span>
                            </li>
@@ -112,11 +112,11 @@ export default function PricingSection() {
                 <a href={plan.url} className="w-full">
                   {plan.isRecommended ? (
                     <Button size="lg" className={cn("w-full font-bold text-lg h-14 rounded-full cta-glow shine-effect")}>
-                      COMPRAR PLANO COMPLETO 🔓
+                      COMPRAR PLANO COMPLETO
                     </Button>
                   ) : (
                     <Button variant="outline" size="lg" className={cn("w-full font-bold text-lg h-14 rounded-full border-accent text-accent hover:bg-accent/10 hover:text-accent")}>
-                      {plan.cta} 🔓
+                      {plan.cta}
                     </Button>
                   )}
                 </a>

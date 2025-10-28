@@ -9,7 +9,7 @@ export default function HeroSection() {
   const heroImage = PlaceHolderImages.find(img => img.id === "hero-family-coloring");
 
   return (
-    <section className="pt-8 pb-8 sm:pt-12 sm:pb-12 bg-secondary">
+    <section className="pt-8 pb-4 sm:pt-12 sm:pb-4 bg-secondary">
       <div className="container mx-auto px-4 md:px-6 grid md:grid-cols-2 gap-12 items-center">
         
         {/* Text content for larger screens */}
@@ -24,7 +24,7 @@ export default function HeroSection() {
           </div>
           <a href="#pricing">
             <Button size="lg" className={cn("cta-glow text-lg font-bold h-14 px-10 self-start rounded-full shine-effect")}>
-              ACESSAR CONTEÚDO AGORA
+              🔓 ACESSAR CONTEÚDO AGORA
             </Button>
           </a>
         </div>
@@ -78,7 +78,7 @@ export default function HeroSection() {
            <div className="w-full px-4 md:hidden mt-6">
             <a href="#pricing" className="w-full">
                 <Button size="lg" className={cn("cta-glow text-lg font-bold h-14 px-10 w-full rounded-full shine-effect")}>
-                  ACESSAR CONTEÚDO AGORA
+                  🔓 ACESSAR CONTEÚDO AGORA
                 </Button>
             </a>
         </div>
