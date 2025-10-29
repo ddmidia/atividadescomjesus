@@ -13,10 +13,9 @@ export default function GuaranteeSection() {
           Garantia de 7 Dias para sua tranquilidade
         </h3>
         <p className="text-lg text-muted-foreground">
-          Você tem 7 dias para conhecer o material com sua família. Se não amar, devolvemos 100% do valor — simples assim, com fé e transparência.
+          Se não achar que o material seja útil para as crianças, devolvemos 100% do valor investido — simples assim, com fé e transparência.
         </p>
       </div>
     </SectionWrapper>
   );
 }
-
