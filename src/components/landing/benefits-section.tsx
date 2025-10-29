@@ -27,7 +27,7 @@ const benefits = [
   {
     icon: <Church className="w-8 h-8 text-accent" />,
     title: "Tenha um pequeno ministério em casa",
-    description: "Um material completo e pronto para usar, que transforma seu lar em um espaço de fé.",
+    description: "Um material completo e pronto para usar, que transforma o ambiente em um espaço de fé.",
   },
 ];
 
