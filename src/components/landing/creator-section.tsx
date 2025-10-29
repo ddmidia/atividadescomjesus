@@ -13,7 +13,7 @@ export default function CreatorSection() {
     <SectionWrapper className="bg-primary/5 pt-0 pb-8">
        <div className="max-w-4xl mx-auto flex flex-col items-center gap-6 md:gap-0">
          <Card className="w-full shadow-xl bg-secondary md:-mt-16 mt-2">
-          <CardContent className="p-8 md:p-12 grid md:grid-cols-3 gap-8 items-center">
+          <CardContent className="p-8 md:p-12 grid md:grid-cols-3 gap-6 md:gap-8 items-center">
             <div className="md:col-span-1 flex justify-center">
               {creatorImage && (
                 <Image
@@ -22,7 +22,7 @@ export default function CreatorSection() {
                   width={112}
                   height={112}
                   data-ai-hint={creatorImage.imageHint}
-                  className="rounded-full w-24 h-24 md:w-28 md:h-28 object-cover border-4 border-brand-green"
+                  className="rounded-full w-28 h-28 object-cover border-4 border-brand-green"
                 />
               )}
             </div>
