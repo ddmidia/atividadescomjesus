@@ -13,7 +13,7 @@ export default function GuaranteeSection() {
           Garantia de 7 Dias para sua tranquilidade
         </h3>
         <p className="text-lg text-muted-foreground">
-          Se não achar que o material seja útil para as crianças, devolvemos 100% do valor investido — simples assim, com fé e transparência.
+          Se não achar que o material seja útil para as crianças, devolvemos 100% do valor investido — <strong>simples assim, com fé e transparência.</strong>
         </p>
       </div>
     </SectionWrapper>
