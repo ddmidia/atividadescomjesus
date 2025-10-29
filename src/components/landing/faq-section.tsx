@@ -37,7 +37,7 @@ const faqs = [
 export default function FaqSection() {
   return (
     <SectionWrapper className="pt-8">
-      <div className="max-w-3xl mx-auto text-center space-y-2 mb-8">
+      <div className="max-w-3xl mx-auto text-center space-y-2 mb-6">
         <h2 className="text-2xl md:text-3xl font-headline font-bold text-headline">
           Perguntas Frequentes:
         </h2>
@@ -48,7 +48,7 @@ export default function FaqSection() {
           <AccordionItem
             key={index}
             value={`item-${index}`}
-            className="bg-card shadow-sm rounded-lg mb-4 px-6 border-b-0 hover:shadow-md transition-shadow"
+            className="bg-card shadow-sm rounded-lg mb-3 px-6 border-b-0 hover:shadow-md transition-shadow"
           >
             <AccordionTrigger className="text-lg text-left font-semibold hover:no-underline">
               {faq.question}
