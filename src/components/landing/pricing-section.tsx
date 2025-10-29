@@ -53,8 +53,8 @@ export default function PricingSection() {
         <p className="text-muted-foreground text-lg">
           Acesso vitalício • Imprima quantas vezes quiser
         </p>
-        <div className="flex items-center justify-start gap-3 text-sm text-muted-foreground bg-card/80 p-3 rounded-lg border border-primary/30 max-w-md mx-auto">
-            <Users className="w-6 h-6 text-brand-green shrink-0"/>
+        <div className="flex items-center justify-center gap-3 text-sm text-muted-foreground bg-card/80 p-3 rounded-lg border border-primary/30 max-w-md mx-auto">
+            <Users className="w-6 h-6 text-accent shrink-0"/>
             <span className="font-medium text-left">Mais de 2 mil famílias já transformaram o aprendizado de fé em diversão diária.</span>
         </div>
       </div>
