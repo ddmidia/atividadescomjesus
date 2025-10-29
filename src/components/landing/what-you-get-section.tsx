@@ -23,17 +23,22 @@ export default function WhatYouGetSection() {
         </h2>
       </div>
       <div className="grid md:grid-cols-2 gap-12 items-center">
-        <ul className="space-y-6">
-          {features.map((feature, index) => (
-            <li key={index} className="flex items-start gap-4">
-              <CheckCircle2 className="w-8 h-8 text-accent mt-1 shrink-0" />
-              <span 
-                className="text-lg text-secondary-foreground"
-                dangerouslySetInnerHTML={{ __html: feature.text }}
-              />
-            </li>
-          ))}
-        </ul>
+        <div className="flex flex-col gap-6">
+          <ul className="space-y-6">
+            {features.map((feature, index) => (
+              <li key={index} className="flex items-start gap-4">
+                <CheckCircle2 className="w-8 h-8 text-accent mt-1 shrink-0" />
+                <span 
+                  className="text-lg text-secondary-foreground"
+                  dangerouslySetInnerHTML={{ __html: feature.text }}
+                />
+              </li>
+            ))}
+          </ul>
+          <p className="text-center text-muted-foreground text-lg md:text-left">
+            É como ter um pequeno ministério dentro de casa — pronto pra usar.
+          </p>
+        </div>
         <div className="flex justify-center">
           <Card className="overflow-hidden shadow-2xl rounded-2xl w-full max-w-md">
             <CardContent className="p-0">
@@ -51,9 +56,6 @@ export default function WhatYouGetSection() {
           </Card>
         </div>
       </div>
-       <p className="text-center text-muted-foreground mt-8 text-lg">
-        💬 É como ter um pequeno ministério dentro de casa — pronto pra usar.
-      </p>
     </SectionWrapper>
   );
 }
