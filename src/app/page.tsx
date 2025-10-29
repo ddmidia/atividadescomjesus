@@ -24,8 +24,8 @@ export default function Home() {
         <BenefitsSection />
         <WhatYouGetSection />
         <PricingSection />
-        <GuaranteeSection />
         <FaqSection />
+        <GuaranteeSection />
         <FinalCtaSection />
       </main>
       <Footer />

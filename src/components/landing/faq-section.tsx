@@ -39,11 +39,8 @@ export default function FaqSection() {
     <SectionWrapper className="pt-8">
       <div className="max-w-3xl mx-auto text-center space-y-6 mb-12">
         <h2 className="text-2xl md:text-3xl font-headline font-bold text-headline">
-          Ainda tem dúvidas?
+          Perguntas Frequentes:
         </h2>
-        <p className="text-muted-foreground text-lg">
-          Confira as respostas para as perguntas mais comuns.
-        </p>
       </div>
 
       <Accordion type="single" collapsible className="w-full max-w-3xl mx-auto">
