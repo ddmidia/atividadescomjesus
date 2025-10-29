@@ -4,7 +4,7 @@
 import { SectionWrapper } from "./section-wrapper";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Check, Users, Star } from "lucide-react";
+import { Check, Users, Gift } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const plans = [
@@ -99,7 +99,7 @@ export default function PricingSection() {
                         {plan.bonuses.map((bonus, index) => (
                            <li key={index} className="flex items-center gap-3 text-sm">
                               <div className="w-5 h-5 rounded-full flex items-center justify-center shrink-0 bg-brand-green text-accent p-0.5">
-                                <Star className="w-full h-full"/>
+                                <Gift className="w-full h-full"/>
                               </div>
                               <span className="text-secondary-foreground font-semibold">{bonus.description}</span>
                            </li>
@@ -132,3 +132,4 @@ export default function PricingSection() {
     </SectionWrapper>
   );
 }
+
