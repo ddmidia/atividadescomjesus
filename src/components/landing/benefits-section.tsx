@@ -1,25 +1,26 @@
 
 import { SectionWrapper } from "./section-wrapper";
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { Heart, BookOpen, Palette, HeartHandshake } from "lucide-react";
 
 const benefits = [
   {
-    icon: "💛",
+    icon: <Heart className="w-8 h-8 text-accent" />,
     title: "Fortalece a fé e o coração dos pequenos",
     description: "Ensina valores cristãos de um jeito que eles amam.",
   },
   {
-    icon: "🎨",
+    icon: <Palette className="w-8 h-8 text-accent" />,
     title: "Desperta criatividade e coordenação de forma natural",
     description: "Atividades que desenvolvem habilidades enquanto divertem.",
   },
   {
-    icon: "🙏",
+    icon: <HeartHandshake className="w-8 h-8 text-accent" />,
     title: "Cria laços reais entre pais e filhos",
     description: "Momentos de qualidade que fortalecem a família.",
   },
   {
-    icon: "📖",
+    icon: <BookOpen className="w-8 h-8 text-accent" />,
     title: "Histórias que ensinam, emocionam e aproximam de Deus",
     description: "Conteúdos que tocam o coração e ensinam a Palavra.",
   },
@@ -38,7 +39,7 @@ export default function BenefitsSection() {
           <Card key={index} className="text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
             <CardHeader className="items-center p-4">
               <div className="bg-card border-2 border-accent p-3 rounded-full mb-3 aspect-square flex items-center justify-center">
-                <span className="text-2xl">{benefit.icon}</span>
+                <div className="text-2xl">{benefit.icon}</div>
               </div>
               <CardTitle className="font-headline text-lg">{benefit.title}</CardTitle>
               <CardDescription className="pt-1 text-sm">{benefit.description}</CardDescription>
