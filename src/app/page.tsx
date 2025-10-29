@@ -7,7 +7,6 @@ import BenefitsSection from '@/components/landing/benefits-section';
 import WhatYouGetSection from '@/components/landing/what-you-get-section';
 import TestimonialsSection from '@/components/landing/testimonials-section';
 import PricingSection from '@/components/landing/pricing-section';
-import GuaranteeSection from '@/components/landing/guarantee-section';
 import FaqSection from '@/components/landing/faq-section';
 import FinalCtaSection from '@/components/landing/final-cta-section';
 import ColoringPagesSection from '@/components/landing/coloring-pages-section';
@@ -24,7 +23,6 @@ export default function Home() {
         <BenefitsSection />
         <WhatYouGetSection />
         <PricingSection />
-        <GuaranteeSection />
         <FaqSection />
         <FinalCtaSection />
       </main>

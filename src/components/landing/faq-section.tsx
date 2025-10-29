@@ -34,6 +34,11 @@ const faqs = [
     answer:
       "Não se preocupe! Oferecemos uma garantia incondicional de 7 dias. Se, por qualquer motivo, você não ficar satisfeito, basta nos enviar um e-mail e devolveremos 100% do seu dinheiro, sem burocracia.",
   },
+  {
+    question: "Tenho garantia na compra do kit?",
+    answer:
+      "Garantia de 7 Dias para sua tranquilidade: Se não achar que o material seja útil para as crianças, devolvemos 100% do valor investido — <strong>simples assim, com fé e transparência.</strong>",
+  }
 ];
 
 export default function FaqSection() {
@@ -59,7 +64,7 @@ export default function FaqSection() {
               {faq.question}
             </AccordionTrigger>
             <AccordionContent className="text-muted-foreground text-base pt-2">
-              {faq.answer}
+              <span dangerouslySetInnerHTML={{ __html: faq.answer }} />
             </AccordionContent>
           </AccordionItem>
         ))}
