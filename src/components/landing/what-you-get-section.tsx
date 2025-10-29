@@ -10,6 +10,7 @@ const features = [
   { text: "<strong class=\"font-bold\">30 Histórias Bíblicas Infantis</strong> — leitura fácil e inspiradora, ideal pra momentos em família." },
   { text: "<strong class=\"font-bold\">Guia da Mãe de Fé</strong> — ideias práticas pra transformar o tempo livre em momentos espirituais com seus filhos." },
   { text: "<strong class=\"font-bold\">Calendário da Fé 2026</strong> — ensine seus filhos a planejar o dia com propósito, com atividades e versículos diários." },
+  { text: "<strong class=\"font-bold\">Tenha um pequeno ministério dentro de casa</strong> — pronto pra usar." },
 ];
 
 export default function WhatYouGetSection() {
@@ -35,9 +36,6 @@ export default function WhatYouGetSection() {
               </li>
             ))}
           </ul>
-          <p className="text-center text-muted-foreground text-lg md:text-left">
-            É como ter um pequeno ministério dentro de casa — pronto pra usar.
-          </p>
         </div>
         <div className="flex justify-center">
           <Card className="overflow-hidden shadow-2xl rounded-2xl w-full max-w-md">
