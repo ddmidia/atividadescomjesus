@@ -22,7 +22,7 @@ export default function HeroSection() {
               <strong className="text-foreground">Descubra como transformar essa distração<br className="md:hidden" /> em devoção com o Kit Colorindo com Fé e<br className="md:hidden" /> Alegria —</strong> São + de 100 Atividades Bíblicas que ensinam sobre a fé de Jesus.
               <br />
               <br className="hidden md:block" />
-              📝 Basta imprimir e se divertir!
+              <strong className="text-foreground">📝 Basta imprimir e se divertir!</strong>
             </h2>
           </div>
         </div>
