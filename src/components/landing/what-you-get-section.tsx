@@ -6,17 +6,17 @@ import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const features = [
-  { text: "<strong class=\"font-bold\">100 desenhos bíblicos</strong> para ensinar a fé enquanto eles se divertem colorindo." },
-  { text: "<strong class=\"font-bold\">30 histórias infantis</strong> que tornam o aprendizado espiritual leve e envolvente." },
-  { text: "<strong class=\"font-bold\">Bônus:</strong> Guia para mães com atividades práticas para fortalecer a fé em família." },
-  { text: "<strong class=\"font-bold\">Bônus:</strong> Calendário da Fé 2026 para criar uma rotina divertida e com propósito." },
+  { text: "<strong class=\"font-bold\">100 Atividades Bíblicas para Colorir</strong> — ensinam sobre Jesus enquanto desenvolvem criatividade e concentração." },
+  { text: "<strong class=\"font-bold\">30 Histórias Bíblicas Infantis</strong> — leitura fácil e inspiradora, ideal pra momentos em família." },
+  { text: "<strong class=\"font-bold\">Guia da Mãe de Fé</strong> — ideias práticas pra transformar o tempo livre em momentos espirituais com seus filhos." },
+  { text: "<strong class=\"font-bold\">Calendário da Fé 2026</strong> — ensine seus filhos a planejar o dia com propósito, com atividades e versículos diários." },
 ];
 
 export default function WhatYouGetSection() {
   const flatlayImage = PlaceHolderImages.find(img => img.id === "flatlay-drawings");
 
   return (
-    <SectionWrapper className="bg-secondary pt-4">
+    <SectionWrapper className="bg-secondary pt-8 pb-12">
       <div className="text-center space-y-4 mb-8">
         <h2 className="text-xl font-headline font-bold text-headline">
           O Kit Colorindo Fé e Alegria, inclui:
@@ -51,6 +51,9 @@ export default function WhatYouGetSection() {
           </Card>
         </div>
       </div>
+       <p className="text-center text-muted-foreground mt-8 text-lg">
+        💬 É como ter um pequeno ministério dentro de casa — pronto pra usar.
+      </p>
     </SectionWrapper>
   );
 }
