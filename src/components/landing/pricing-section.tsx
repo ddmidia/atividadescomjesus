@@ -46,13 +46,15 @@ const plans = [
 export default function PricingSection() {
   return (
     <SectionWrapper id="pricing" className="bg-secondary scroll-mt-20 pt-8 pb-12">
-      <div className="text-center space-y-4 mb-12 max-w-3xl mx-auto">
+      <div className="text-center space-y-4 mb-8 max-w-3xl mx-auto">
         <h2 className="text-xl md:text-2xl font-headline font-bold text-headline">
           Escolha o Kit ideal para seu filho:
         </h2>
         <div className="flex items-center justify-center text-center gap-3 text-muted-foreground bg-card/80 p-3 rounded-lg border border-primary/30 max-w-md mx-auto">
             <Users className="w-6 h-6 text-accent shrink-0"/>
-            <span className="font-medium text-left text-[13px] leading-tight">Mais de 5.637 famílias já transformaram o tempo de tela das crianças em diversão e aprendizado diário.</span>
+            <span className="font-medium text-left text-[13px] leading-tight">
+              <strong>+ de 5 mil</strong> famílias já transformaram o tempo de tela das crianças em diversão e aprendizado diário.
+            </span>
         </div>
       </div>
 
