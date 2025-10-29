@@ -1,3 +1,4 @@
+
 import {
   Accordion,
   AccordionContent,
@@ -5,6 +6,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { SectionWrapper } from "./section-wrapper";
+import { HelpCircle } from "lucide-react";
 
 const faqs = [
   {
@@ -37,7 +39,10 @@ const faqs = [
 export default function FaqSection() {
   return (
     <SectionWrapper className="pt-8">
-      <div className="max-w-3xl mx-auto text-center space-y-2 mb-4">
+      <div className="max-w-3xl mx-auto text-center flex flex-col items-center gap-4 mb-4">
+        <div className="bg-card border-2 border-accent p-3 rounded-full aspect-square flex items-center justify-center">
+          <HelpCircle className="w-8 h-8 text-accent" strokeWidth={1.5} />
+        </div>
         <h2 className="text-xl font-headline font-bold text-headline">
           Perguntas Frequentes:
         </h2>
