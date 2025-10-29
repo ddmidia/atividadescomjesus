@@ -53,7 +53,7 @@ export default function PricingSection() {
         <p className="text-muted-foreground text-lg">
           Acesso vitalício • Imprima quantas vezes quiser
         </p>
-        <div className="flex items-center justify-center gap-3 text-sm text-muted-foreground bg-card/80 p-3 rounded-lg border border-primary/30 max-w-md mx-auto">
+        <div className="flex items-center justify-center text-center gap-3 text-sm text-muted-foreground bg-card/80 p-3 rounded-lg border border-primary/30 max-w-md mx-auto">
             <Users className="w-6 h-6 text-accent shrink-0"/>
             <span className="font-medium text-left">Mais de 2 mil famílias já transformaram o aprendizado de fé em diversão diária.</span>
         </div>
@@ -94,7 +94,7 @@ export default function PricingSection() {
                 </ul>
                 {plan.bonuses && (
                    <div className="border-t border-dashed pt-6 space-y-4">
-                      <h4 className="font-headline font-semibold text-center text-primary-foreground">Bônus Exclusivos:</h4>
+                      <h4 className="font-headline font-semibold text-center text-primary-foreground text-xl">Bônus Exclusivos:</h4>
                       <ul className="space-y-3">
                         {plan.bonuses.map((bonus, index) => (
                            <li key={index} className="flex items-center gap-3">
