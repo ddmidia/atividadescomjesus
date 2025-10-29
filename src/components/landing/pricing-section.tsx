@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils";
 
 const plans = [
   {
-    name: "Kit Básico",
+    name: "Kit Básico • Uso Pessoal",
     originalPrice: "R$67",
     price: "R$17,00",
     priceDescription: "Acesso vitalício",
