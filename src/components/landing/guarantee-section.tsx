@@ -1,12 +1,12 @@
 
 import { SectionWrapper } from "./section-wrapper";
-import { ShieldCheck } from "lucide-react";
+import { Award } from "lucide-react";
 
 export default function GuaranteeSection() {
   return (
     <SectionWrapper className="pt-0 pb-8">
       <div className="max-w-3xl mx-auto text-center flex flex-col items-center gap-4">
-        <ShieldCheck className="w-16 h-16 text-accent" strokeWidth={1.5} />
+        <Award className="w-16 h-16 text-accent" strokeWidth={1.5} />
         <h3 className="text-xl font-headline font-bold text-headline">
           Garantia de 7 Dias para sua tranquilidade
         </h3>
