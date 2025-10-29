@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils";
 
 const plans = [
   {
-    name: "Plano Básico",
+    name: "Kit Básico",
     originalPrice: "R$67",
     price: "R$17,00",
     priceDescription: "Acesso vitalício",
@@ -19,11 +19,11 @@ const plans = [
       "Suporte individual via e-mail para tirar dúvidas.",
     ],
     isRecommended: false,
-    cta: "COMPRAR PLANO BÁSICO",
+    cta: "COMPRAR KIT BÁSICO",
     url: "https://app.ombrelone.com/checkout/digital/2sfcjj7u0v"
   },
   {
-    name: "Plano Completo",
+    name: "Kit Completo • Uso Pessoal e Educativo",
     originalPrice: "R$97",
     price: "R$27,00",
     priceDescription: "Acesso vitalício",
@@ -38,7 +38,7 @@ const plans = [
       { name: "Bônus 2", description: "Calendário da Fé 2026" },
     ],
     isRecommended: true,
-    cta: "COMPRAR PLANO COMPLETO",
+    cta: "COMPRAR KIT COMPLETO",
     url: "https://app.ombrelone.com/checkout/digital/3y799g6jpv"
   },
 ];
@@ -112,7 +112,7 @@ export default function PricingSection() {
                 <a href={plan.url} className="w-full">
                   {plan.isRecommended ? (
                     <Button size="lg" className={cn("w-full font-bold text-lg h-14 rounded-full cta-glow shine-effect")}>
-                      COMPRAR PLANO COMPLETO
+                      {plan.cta}
                     </Button>
                   ) : (
                     <Button variant="outline" size="lg" className={cn("w-full font-bold text-lg h-14 rounded-full border-accent text-accent hover:bg-accent/10 hover:text-accent")}>
