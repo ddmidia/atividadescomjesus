@@ -10,7 +10,6 @@ const features = [
   { text: "<strong class=\"font-bold\">30 Histórias Bíblicas Infantis</strong> — leitura fácil e inspiradora, ideal pra momentos em família." },
   { text: "<strong class=\"font-bold\">Guia da Mãe de Fé</strong> — ideias práticas pra transformar o tempo livre em momentos espirituais com seus filhos." },
   { text: "<strong class=\"font-bold\">Calendário da Fé 2026</strong> — ensine seus filhos a planejar o dia com propósito, com atividades e versículos diários." },
-  { text: "<strong class=\"font-bold\">Tenha um pequeno ministério dentro de casa</strong> — pronto pra usar." },
 ];
 
 export default function WhatYouGetSection() {
@@ -18,8 +17,8 @@ export default function WhatYouGetSection() {
 
   return (
     <SectionWrapper className="bg-secondary pt-8 pb-12">
-      <div className="text-center space-y-4 mb-8">
-        <h2 className="text-xl font-headline font-bold text-headline">
+      <div className="text-center space-y-4 mb-12">
+        <h2 className="text-2xl font-headline font-bold text-headline">
           O Kit Colorindo Fé e Alegria, inclui:
         </h2>
       </div>

@@ -1,7 +1,7 @@
 
 import { SectionWrapper } from "./section-wrapper";
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { Heart, BookOpen, Palette, HeartHandshake } from "lucide-react";
+import { Heart, BookOpen, Palette, HeartHandshake, Church } from "lucide-react";
 
 const benefits = [
   {
@@ -21,20 +21,25 @@ const benefits = [
   },
   {
     icon: <BookOpen className="w-8 h-8 text-accent" />,
-    title: "Histórias que ensinam, emocionam e aproximam de Deus",
+    title: "Histórias que ensinam e aproximam de Deus",
     description: "Conteúdos que tocam o coração e ensinam a Palavra.",
+  },
+  {
+    icon: <Church className="w-8 h-8 text-accent" />,
+    title: "Tenha um pequeno ministério em casa",
+    description: "Um material completo e pronto para usar, que transforma seu lar em um espaço de fé.",
   },
 ];
 
 export default function BenefitsSection() {
   return (
-    <SectionWrapper className="pt-0">
+    <SectionWrapper className="pt-8">
       <div className="text-center space-y-2 mb-4">
-        <h2 className="text-xl font-headline font-bold text-headline">
+        <h2 className="text-2xl font-headline font-bold text-headline">
           Atividades com Propósito
         </h2>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
         {benefits.map((benefit, index) => (
           <Card key={index} className="text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
             <CardHeader className="items-center p-4">
