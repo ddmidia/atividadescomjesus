@@ -13,7 +13,7 @@ export default function HeroSection() {
       <div className="container mx-auto px-4 md:px-6 flex flex-col items-center">
         
         {/* Text content */}
-        <div className="flex flex-col space-y-6 text-center md:text-left md:items-center">
+        <div className="flex flex-col space-y-6 text-center md:items-center">
           <div className="space-y-4 text-center">
             <h1 className="text-3xl md:text-4xl font-headline font-bold tracking-tight text-headline">
               Seus filhos passam tempo demais nas telas?
@@ -22,11 +22,6 @@ export default function HeroSection() {
               <strong className="text-foreground">Descubra como transformar essa distração em devoção com o Kit Colorindo com Fé e Alegria.</strong> São mais de 100 Atividades Bíblicas para colorir e ensinar sobre Jesus — é só imprimir e se divertir!
             </h2>
           </div>
-          <a href="#pricing" className="md:hidden">
-            <Button size="lg" className={cn("cta-glow text-lg font-bold h-14 px-10 w-full rounded-full shine-effect")}>
-              🔓 ACESSAR CONTEÚDO AGORA
-            </Button>
-          </a>
         </div>
 
         {/* Image */}
@@ -48,9 +43,10 @@ export default function HeroSection() {
           </Card>
         </div>
         
-        <div className="hidden md:block mt-6">
-          <a href="#pricing">
-              <Button size="lg" className={cn("cta-glow text-lg font-bold h-14 px-10 rounded-full shine-effect")}>
+        {/* CTA Button */}
+        <div className="mt-6 w-full flex justify-center">
+          <a href="#pricing" className="w-full max-w-md md:max-w-none md:w-auto">
+              <Button size="lg" className={cn("cta-glow text-lg font-bold h-14 px-10 rounded-full shine-effect w-full md:w-auto")}>
                 🔓 ACESSAR CONTEÚDO AGORA
               </Button>
           </a>
