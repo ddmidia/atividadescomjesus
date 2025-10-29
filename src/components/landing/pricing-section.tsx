@@ -97,7 +97,7 @@ export default function PricingSection() {
                       <h4 className="font-headline font-semibold text-center text-primary-foreground">Bônus Exclusivos:</h4>
                       <ul className="space-y-3">
                         {plan.bonuses.map((bonus, index) => (
-                           <li key={index} className="flex items-center gap-3 text-sm">
+                           <li key={index} className="flex items-center gap-3">
                               <div className="w-5 h-5 rounded-full flex items-center justify-center shrink-0 bg-brand-green text-accent p-0.5">
                                 <Gift className="w-full h-full"/>
                               </div>
@@ -132,4 +132,3 @@ export default function PricingSection() {
     </SectionWrapper>
   );
 }
-
