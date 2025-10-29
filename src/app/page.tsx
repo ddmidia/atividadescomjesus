@@ -20,9 +20,9 @@ export default function Home() {
         <HeroSection />
         <CreatorSection />
         <ColoringPagesSection />
+        <TestimonialsSection />
         <BenefitsSection />
         <WhatYouGetSection />
-        <TestimonialsSection />
         <PricingSection />
         <GuaranteeSection />
         <FaqSection />
