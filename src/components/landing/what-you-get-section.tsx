@@ -16,10 +16,10 @@ export default function WhatYouGetSection() {
   const flatlayImage = PlaceHolderImages.find(img => img.id === "flatlay-drawings");
 
   return (
-    <SectionWrapper className="bg-secondary pt-8">
+    <SectionWrapper className="bg-secondary pt-4">
       <div className="text-center space-y-4 mb-4">
         <h2 className="text-xl font-headline font-bold text-headline">
-          Dentro do Colorindo Fé e Alegria, você recebe:
+          O Kit Colorindo Fé e Alegria, inclui:
         </h2>
       </div>
       <div className="grid md:grid-cols-2 gap-12 items-center">

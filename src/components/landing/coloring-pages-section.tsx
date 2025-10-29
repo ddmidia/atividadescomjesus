@@ -92,7 +92,7 @@ export default function ColoringPagesSection() {
         <CarouselNext className="hidden sm:flex" />
       </Carousel>
       
-      <div className="flex flex-col items-center justify-center gap-2 mt-4">
+      <div className="flex flex-col items-center justify-center gap-1 mt-2">
         <div className="flex items-center gap-2">
             {Array.from({ length: count }).map((_, i) => (
                 <span

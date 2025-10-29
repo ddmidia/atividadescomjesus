@@ -30,7 +30,7 @@ export default function BenefitsSection() {
     <SectionWrapper className="pt-8">
       <div className="text-center space-y-2 mb-4">
         <h2 className="text-2xl font-headline font-bold text-headline">
-          Por que o Colorindo Fé e Alegria é diferente?
+          Atividades com Propósito
         </h2>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
