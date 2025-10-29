@@ -37,7 +37,7 @@ const faqs = [
 export default function FaqSection() {
   return (
     <SectionWrapper className="pt-8">
-      <div className="max-w-3xl mx-auto text-center space-y-6 mb-12">
+      <div className="max-w-3xl mx-auto text-center space-y-2 mb-8">
         <h2 className="text-2xl md:text-3xl font-headline font-bold text-headline">
           Perguntas Frequentes:
         </h2>
