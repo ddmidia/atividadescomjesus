@@ -10,6 +10,11 @@ import { HelpCircle } from "lucide-react";
 
 const faqs = [
   {
+    question: "Tenho garantia na compra do kit?",
+    answer:
+      "Garantia de 7 Dias para sua tranquilidade: Se não achar que o material seja útil para as crianças, devolvemos 100% do valor investido — <strong>simples assim, com fé e transparência.</strong>",
+  },
+  {
     question: "Como vou receber o material?",
     answer:
       "O acesso ao material é 100% digital e imediato. Após a confirmação do pagamento, você receberá um e-mail com o link para baixar todo o conteúdo em PDF. Simples e rápido!",
@@ -34,11 +39,6 @@ const faqs = [
     answer:
       "Não se preocupe! Oferecemos uma garantia incondicional de 7 dias. Se, por qualquer motivo, você não ficar satisfeito, basta nos enviar um e-mail e devolveremos 100% do seu dinheiro, sem burocracia.",
   },
-  {
-    question: "Tenho garantia na compra do kit?",
-    answer:
-      "Garantia de 7 Dias para sua tranquilidade: Se não achar que o material seja útil para as crianças, devolvemos 100% do valor investido — <strong>simples assim, com fé e transparência.</strong>",
-  }
 ];
 
 export default function FaqSection() {
