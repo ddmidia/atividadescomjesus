@@ -4,7 +4,7 @@
 import { SectionWrapper } from "./section-wrapper";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Check, Users, Gift, Star } from "lucide-react";
+import { Check, Users, Gift } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const plans = [
@@ -48,14 +48,11 @@ export default function PricingSection() {
     <SectionWrapper id="pricing" className="bg-secondary scroll-mt-20 pt-8 pb-12">
       <div className="text-center space-y-4 mb-12 max-w-3xl mx-auto">
         <h2 className="text-xl md:text-2xl font-headline font-bold text-headline">
-          Escolha o plano ideal e comece a se divertir
+          Escolha o Kit ideal para seu filho
         </h2>
-        <p className="text-muted-foreground text-lg">
-          Acesso vitalício • Imprima quantas vezes quiser
-        </p>
         <div className="flex items-center justify-center text-center gap-3 text-sm text-muted-foreground bg-card/80 p-3 rounded-lg border border-primary/30 max-w-md mx-auto">
             <Users className="w-6 h-6 text-accent shrink-0"/>
-            <span className="font-medium text-left">Mais de 2 mil famílias já transformaram o aprendizado de fé em diversão diária.</span>
+            <span className="font-medium text-left">Mais de 5.637 famílias já transformaram o tempo de tela das crianças em diversão e aprendizado diário.</span>
         </div>
       </div>
 
@@ -94,7 +91,7 @@ export default function PricingSection() {
                 </ul>
                 {plan.bonuses && (
                    <div className="border-t border-dashed pt-6 space-y-4">
-                      <h4 className="font-headline font-semibold text-center text-primary-foreground text-xl">Bônus Exclusivos:</h4>
+                      <h4 className="font-headline font-semibold text-center text-xl text-primary-foreground">Bônus Exclusivos:</h4>
                       <ul className="space-y-3">
                         {plan.bonuses.map((bonus, index) => (
                            <li key={index} className="flex items-center gap-3">
