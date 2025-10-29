@@ -18,7 +18,7 @@ export default function HeroSection() {
             <h1 className="text-3xl md:text-4xl font-headline font-bold tracking-tight text-headline">
               Seus filhos passam tempo demais nas telas?
             </h1>
-            <h2 className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
+            <h2 className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
               <strong className="text-foreground">Descubra como transformar essa distração em devoção com o Kit Colorindo com Fé e Alegria.</strong> São mais de 100 Atividades Bíblicas para colorir e ensinar sobre Jesus — é só imprimir e se divertir!
             </h2>
           </div>
