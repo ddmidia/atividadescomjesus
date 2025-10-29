@@ -4,7 +4,7 @@
 import { SectionWrapper } from "./section-wrapper";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Check, Users, Gift } from "lucide-react";
+import { Check, Users, Gift, Star } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const plans = [
@@ -132,3 +132,5 @@ export default function PricingSection() {
     </SectionWrapper>
   );
 }
+
+    
