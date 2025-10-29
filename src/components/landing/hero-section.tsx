@@ -19,7 +19,7 @@ export default function HeroSection() {
               Seus filhos passam tempo<br className="md:hidden" /> demais nas telas?
             </h1>
             <h2 className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-              Descubra como transformar essa distração<br className="md:hidden" /> em devoção com o Kit Colorindo com Fé e<br className="md:hidden" /> Alegria <strong className="text-foreground">— São mais de 100 Atividades Bíblicas para<br className="md:hidden" /> Colorir e Ensinar sobre Jesus. Basta<br className="md:hidden" /> imprimir e se divertir!</strong>
+              <strong className="text-foreground">Descubra como transformar essa distração<br className="md:hidden" /> em devoção com o Kit Colorindo com Fé e<br className="md:hidden" /> Alegria —</strong> São mais de 100 Atividades Bíblicas para<br className="md:hidden" /> Colorir e Ensinar sobre Jesus. Basta<br className="md:hidden" /> imprimir e se divertir!
             </h2>
           </div>
         </div>
